@@ -1,0 +1,68 @@
+@use 'media' as *;
+
+:root {
+  --font-size: 16px;
+
+  @include laptop {
+    --font-size: 14px;
+  }
+
+  @include mobile {
+    --font-size: 12px;
+  }
+}
+
+$font-family: 'Poppins', sans-serif;
+$font-size: var(--font-size);
+$font-weight: 300;
+$letter-spacing: 0.05em;
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Poppins Light'), local('Poppins-Light'), url('../fonts/poppins-v21-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poppins Regular'), local('Poppins-Regular'),
+    url('../fonts/poppins-v21-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Poppins Medium'), local('Poppins-Medium'), url('../fonts/poppins-v21-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url('../fonts/poppins-v21-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Poppins Bold'), local('Poppins-Bold'), url('../fonts/poppins-v21-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Poppins ExtraBold'), local('Poppins-ExtraBold'),
+    url('../fonts/poppins-v21-latin-800.woff2') format('woff2');
+}
