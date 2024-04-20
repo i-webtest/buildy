@@ -1,0 +1,23 @@
+// @use 'media' as *;
+
+.header {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  z-index: 50;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+  }
+
+  &__logo {
+    width: 221px;
+  }
+
+  &__nav {
+  }
+}

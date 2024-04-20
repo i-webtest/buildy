@@ -29,6 +29,7 @@ body {
   font-weight: $font-weight;
   letter-spacing: $letter-spacing;
   color: $white;
+  background-color: rgba(0, 0, 0, 0.8);
   // background-color: $light;
 }
 
@@ -77,6 +78,14 @@ iframe {
 .visually-hidden {
   position: fixed;
   transform: scale(0);
+}
+
+.button {
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid $white;
+  color: $white;
+  padding: 13px 23px;
 }
 
 .container {

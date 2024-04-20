@@ -19,6 +19,212 @@
     <title>BUILDY VP - Welcome to The Buildy VP</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header class="header">
+      <div class="container header__container">
+        <img class="header__logo" src="/img/logo.svg" width="221" height="62" alt="Logo Buildy" />
+
+        <button class="hamburger" type="button">
+          <span></span>
+        </button>
+
+        <nav class="header__nav navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link active" href="/">Home</a>
+            </li>
+
+            <li class="navigation__item">
+              <a class="navigation__link" href="#about">About&nbsp;us</a>
+            </li>
+
+            <li class="navigation__item">
+              <a class="navigation__link" href="#services">Services</a>
+            </li>
+
+            <li class="navigation__item">
+              <a class="navigation__link" href="#project">Project</a>
+            </li>
+
+            <li class="navigation__item">
+              <a class="navigation__link" href="#blog">Blog</a>
+            </li>
+
+            <li class="navigation__item">
+              <a class="navigation__link" href="#footer">Contact</a>
+            </li>
+
+            <li class="navigation__item">
+              <a class="navigation__link navigation__button button" href="#contact">Contact&nbsp;Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__wrapper">
+        <section class="hero">
+          <div class="container hero__container">
+            <p class="hero__subtitle">Welcome to The Buildy VP</p>
+
+            <h1 class="hero__title">
+              <span class="hero__title-thin">QUICK WAY TO Build YOUR Newest</span>
+              <span class="hero__title-bold">Home and NEW FUTURE</span>
+            </h1>
+            <p class="hero__description">
+              Lorem Ipsum is simply dummy text the printing & type setting the industry. Lorem is Ipsum has been their
+              iindustry standards dummy texts ever since their text printing 1500s.
+            </p>
+
+            <button class="hero__button button">Explore Now</button>
+
+            <div class="hero__social">
+              <a class="hero__social-link" href="#">Facebook</a>
+              <span class="hero__social-dot"></span>
+              <a class="hero__social-link" href="#">Instagram</a>
+              <span class="hero__social-dot"></span>
+              <a class="hero__social-link" href="#">Twitter</a>
+              <span class="hero__social-dot"></span>
+              <a class="hero__social-link" href="#">LinkedIn</a>
+            </div>
+
+            <ul class="hero__list">
+              <li class="hero__item">
+                <p class="hero__item-info">Property <span>Insurance</span></p>
+                <svg class="hero__item-icon">
+                  <use href="img/sprite.svg#insurance"></use>
+                </svg>
+              </li>
+
+              <li class="hero__item">
+                <p class="hero__item-info">Tax <span>Advantage</span></p>
+                <svg class="hero__item-icon">
+                  <use href="img/sprite.svg#advantage"></use>
+                </svg>
+              </li>
+
+              <li class="hero__item">
+                <p class="hero__item-info">24 Hour <span>Consultation</span></p>
+                <svg class="hero__item-icon">
+                  <use href="img/sprite.svg#consultation"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+
+          <svg class="hero__buildy">
+            <use href="img/sprite.svg#buildy"></use>
+          </svg>
+        </section>
+
+        <section class="about" id="about">
+          <div class="container">
+            <h2 class="about__title">our <span>sponsored</span></h2>
+
+            <ul class="about__list">
+              <li class="about__item">
+                <button
+                  class="about__item-link about__item-link_active"
+                  data-src="https://www.youtube.com/embed/ByAn8DF8Ykk"
+                  type="button"
+                >
+                  <svg class="about__item-icon" width="86" height="100">
+                    <use href="img/sprite.svg#one"></use>
+                  </svg>
+                </button>
+              </li>
+
+              <li class="about__item">
+                <button class="about__item-link" data-src="https://www.youtube.com/embed/ByAn8DF8Ykk" type="button">
+                  <svg class="about__item-icon" width="114" height="100">
+                    <use href="img/sprite.svg#two"></use>
+                  </svg>
+                </button>
+              </li>
+
+              <li class="about__item">
+                <button class="about__item-link" data-src="https://www.youtube.com/embed/ByAn8DF8Ykk" type="button">
+                  <svg class="about__item-icon" width="104" height="100">
+                    <use href="img/sprite.svg#three"></use>
+                  </svg>
+                </button>
+              </li>
+
+              <li class="about__item">
+                <button class="about__item-link" data-src="https://www.youtube.com/embed/ByAn8DF8Ykk" type="button">
+                  <svg class="about__item-icon" width="104" height="100">
+                    <use href="img/sprite.svg#four"></use>
+                  </svg>
+                </button>
+              </li>
+
+              <li class="about__item">
+                <button class="about__item-link" data-src="https://www.youtube.com/embed/ByAn8DF8Ykk" type="button">
+                  <svg class="about__item-icon" width="144" height="100">
+                    <use href="img/sprite.svg#five"></use>
+                  </svg>
+                </button>
+              </li>
+
+              <li class="about__item">
+                <button class="about__item-link" data-src="https://www.youtube.com/embed/ByAn8DF8Ykk" type="button">
+                  <svg class="about__item-icon" width="114" height="100">
+                    <use href="img/sprite.svg#six"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+
+            <div class="about__wrapper">
+              <div class="about__content">
+                <h3 class="about__subtitle">Find the Home That is <span>Perfect For You!</span></h3>
+
+                <p class="about__description">
+                  Lorem Ipsum is&nbsp;simply dummy text the printing &amp;&nbsp;type setting the industry. Lorem
+                  is&nbsp;Ipsum has been their iindustry standards dummy texts ever since their text priinting 1500s,
+                  when an&nbsp;unknown printers tooks a&nbsp;galley of&nbsp;types and scrambled it&nbsp;to&nbsp;make
+                  a&nbsp;type specimen books. It&nbsp;has survived not only five centuries, but also the leap into
+                  electronics types settings, remainings essentially unchanged. It&nbsp;was popularized in&nbsp;tthe
+                  1960s.
+                </p>
+
+                <p class="about__description">
+                  It&nbsp;is&nbsp;a&nbsp;long established fact that reader will be&nbsp;distracted by&nbsp;the readable
+                  content of&nbsp;a&nbsp;pages when looking at&nbsp;it&rsquo;s layouts. The points of&nbsp;using Lorrem
+                  Ipsum is&nbsp;that its has a&nbsp;more-or-less normal distribution of&nbsp;letter, opposed
+                  to&nbsp;using &rsquo;Content here, content here&rsquo;, making&nbsp;it.
+                </p>
+
+                <p class="about__description">
+                  There are many variations of&nbsp;passages of&nbsp;Lorem Ipsum available, but their majority have
+                  suffered alteration in&nbsp;some form, by&nbsp;injected humor, or&nbsp;their randomized words which
+                  don&rsquo;t look the even slightly bellievable. If&nbsp;you are going to&nbsp;use a&nbsp;passages
+                  of&nbsp;Lorem Ipsum, you need to&nbsp;be&nbsp;sure there is&nbsp;nott anything embarrassing hidden
+                  in&nbsp;their middle of&nbsp;texts.
+                </p>
+
+                <button class="about__button button" type="button">Read more</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="services" id="services">
+        <div class="container">
+          <h2>title</h2>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2>title</h2>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container"></div>
+    </footer>
   </body>
 </html>
