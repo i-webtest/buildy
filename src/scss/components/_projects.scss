@@ -1,0 +1,245 @@
+@use '../variables' as *;
+@use '../media' as *;
+
+.projects {
+  position: relative;
+  background-image: url('/img/projects-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+
+  @include tablet {
+    padding: 100px 0;
+  }
+
+  @include mobile {
+    padding: 80px 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-color: $black;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 52px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include laptop {
+      font-size: 38px;
+    }
+
+    @include tablet {
+      font-size: 26px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    & span {
+      font-weight: 700;
+    }
+  }
+
+  &__description {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto 50px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 45px;
+    margin-bottom: 50px;
+
+    @include laptop {
+      gap: 20px;
+    }
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__card {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: end;
+    max-width: 420px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 15px 20px;
+
+    &:hover &-details {
+      bottom: 0;
+    }
+
+    &:hover &-title {
+      display: none;
+    }
+  }
+
+  &__card-title {
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+
+    @include laptop {
+      font-size: 18px;
+    }
+
+    & span {
+      font-weight: 700;
+    }
+  }
+
+  &__card-intersect {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__card-details {
+    position: absolute;
+    z-index: 2;
+    bottom: -100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+    padding: 30px;
+
+    @include laptop {
+      padding: 20px;
+    }
+  }
+
+  &__card-details-title {
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+    @include laptop {
+      font-size: 18px;
+    }
+
+    & span {
+      font-weight: 700;
+    }
+  }
+
+  &__card-location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 14px;
+      height: 20px;
+      background-image: url("data:image/svg+xml,%3Csvg width='14' height='20' viewBox='0 0 14 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.04037 1.56271C6.81267 1.56115 6.62696 1.73497 6.62532 1.9506C6.62367 2.16623 6.80649 2.3424 7.03419 2.34396C7.26148 2.34552 7.44718 2.17208 7.44883 1.95646C7.45048 1.74083 7.26766 1.56466 7.04037 1.56271ZM7.02163 3.90642C5.4318 3.89572 4.12978 5.11248 4.11776 6.62026C4.10578 8.12796 5.38906 9.36374 6.9784 9.37511L7.00047 9.37518C8.57968 9.37518 9.87033 8.16206 9.88227 6.66127C9.89425 5.15365 8.61101 3.91779 7.02163 3.90642ZM7.00039 8.59397L6.98457 8.59389C5.84932 8.58577 4.93267 7.70303 4.94123 6.62612C4.94975 5.55404 5.8716 4.68756 6.99964 4.68756L7.01546 4.68764C8.15071 4.69576 9.06736 5.5785 9.0588 6.65541C9.05023 7.72749 8.12843 8.59397 7.00039 8.59397ZM8.79655 1.85896C8.58236 1.78685 8.34687 1.8933 8.27086 2.09666C8.19489 2.30001 8.3071 2.52326 8.52142 2.59537C10.3351 3.20517 11.5438 4.84389 11.5293 6.67307C11.5276 6.88877 11.7106 7.06498 11.938 7.06663H11.9411C12.167 7.06663 12.3511 6.89366 12.3528 6.67893C12.3699 4.51693 10.9408 2.57994 8.79655 1.85896Z' fill='white' /%3E%3Cpath d='M9.52643 14.7048C12.2652 11.3605 13.9767 9.6165 13.9998 6.69056C14.0288 3.00919 10.8796 0 6.99936 0C3.16442 0 0.0293881 2.94641 0.000235688 6.59095C-0.0233168 9.59623 1.72002 11.3378 4.47764 14.7042C1.73431 15.0932 0.000235688 16.0704 0.000235688 17.2657C0.000235688 18.0663 0.78035 18.7848 2.19692 19.2887C3.48625 19.7474 5.19204 20 7.00002 20C8.808 20 10.5138 19.7474 11.8031 19.2887C13.2197 18.7848 13.9998 18.0663 13.9998 17.2656C13.9998 16.071 12.2673 15.094 9.52643 14.7048ZM0.823708 6.59685C0.849402 3.38087 3.61538 0.781252 6.99944 0.781252C10.4236 0.781252 13.2019 3.43704 13.1763 6.68474C13.1544 9.46342 11.3393 11.1758 8.4415 14.7595C7.92462 15.3984 7.44995 16.0025 7.00064 16.5934C6.55265 16.0021 6.08744 15.4089 5.56282 14.7593C2.54522 11.0255 0.801391 9.44256 0.823708 6.59685ZM7.00002 19.2188C3.46505 19.2188 0.823708 18.1877 0.823708 17.2657C0.823708 16.5819 2.40271 15.7182 5.05764 15.4191C5.64452 16.1496 6.15905 16.8132 6.6637 17.4911C6.70168 17.5421 6.75202 17.5837 6.81047 17.6125C6.86893 17.6412 6.9338 17.6562 6.99965 17.6563H7.00002C7.06581 17.6563 7.13064 17.6413 7.18909 17.6127C7.24753 17.584 7.29788 17.5425 7.33593 17.4916C7.8358 16.8226 8.36442 16.1425 8.94627 15.4195C11.5987 15.7189 13.1763 16.5824 13.1763 17.2657C13.1763 18.1877 10.535 19.2188 7.00002 19.2188Z' fill='white' /%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__card-text {
+    margin-bottom: 15px;
+  }
+
+  &__card-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: max-content;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 0;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 14px;
+    }
+
+    @include mobile {
+      font-size: 12px;
+    }
+
+    &::after {
+      content: '';
+      width: 11px;
+      height: 11px;
+      background-image: url("data:image/svg+xml,%3Csvg width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.66667 0C3.82243 0.000172766 3.97224 0.059815 4.0855 0.166741C4.19876 0.273666 4.26692 0.419805 4.27605 0.575297C4.28518 0.730789 4.23459 0.883898 4.13462 1.00334C4.03464 1.12279 3.89284 1.19955 3.73817 1.21794L3.66667 1.22222H1.22222V9.77778H9.77778V4.27778C9.77795 4.12202 9.83759 3.9722 9.94452 3.85894C10.0514 3.74568 10.1976 3.67752 10.3531 3.66839C10.5086 3.65927 10.6617 3.70986 10.7811 3.80983C10.9006 3.9098 10.9773 4.05161 10.9957 4.20628L11 4.27778V9.77778C11.0001 10.0861 10.8836 10.3831 10.674 10.6092C10.4643 10.8353 10.1769 10.9738 9.86944 10.9969L9.77778 11H1.22222C0.91387 11.0001 0.616876 10.8836 0.390776 10.674C0.164677 10.4643 0.0261821 10.1769 0.00305569 9.86944L6.12749e-08 9.77778V1.22222C-9.75206e-05 0.91387 0.11636 0.616876 0.326026 0.390776C0.535692 0.164676 0.823072 0.026182 1.13056 0.00305563L1.22222 0H3.66667ZM10.0913 0C10.4714 0 10.6926 0.286 10.7482 0.523111C10.8038 0.760833 10.7329 1.1165 10.3907 1.28517L10.1377 1.41411L10.0375 1.46789L9.81567 1.59072L9.56817 1.73494L9.29989 1.89994C8.88311 2.16272 8.40767 2.49639 7.92978 2.90033C6.919 3.75528 5.93878 4.89317 5.46883 6.30422C5.41762 6.45803 5.3074 6.5852 5.16242 6.65774C5.01745 6.73029 4.84959 6.74227 4.69578 6.69106C4.54197 6.63984 4.4148 6.52962 4.34226 6.38464C4.26971 6.23967 4.25773 6.07181 4.30894 5.918C4.87606 4.21667 6.03411 2.90339 7.14083 1.96717C7.40422 1.74411 7.66761 1.54061 7.92183 1.35606L8.11128 1.22222H6.72222C6.56646 1.22205 6.41665 1.16241 6.30339 1.05548C6.19012 0.948556 6.12197 0.802418 6.11284 0.646925C6.10371 0.491433 6.1543 0.338324 6.25427 0.21888C6.35424 0.0994365 6.49605 0.0226744 6.65072 0.00427776L6.72222 0H10.0913Z' fill='white' /%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+}
+
+.pacific {
+  grid-column: 1/3;
+  align-self: end;
+  height: 300px;
+  background-image: url('/img/pacific.jpg');
+
+  @include tablet {
+    grid-column: 1/2;
+  }
+}
+
+.greenside {
+  grid-column: 3/5;
+  height: 500px;
+  background-image: url('/img/greenside.jpg');
+
+  @include tablet {
+    grid-column: 2/3;
+  }
+}
+
+.chili {
+  grid-column: 5/7;
+  align-self: end;
+  height: 400px;
+  background-image: url('/img/chili.jpg');
+}
+
+.nou {
+  grid-column: 2 / 4;
+  grid-row: 2/3;
+  height: 300px;
+  background-image: url('/img/nou.jpg');
+}
+
+.rego {
+  grid-column: 4 / 6;
+  grid-row: 2/3;
+  height: 430px;
+  background-image: url('/img/rego.jpg');
+}

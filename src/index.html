@@ -13,7 +13,7 @@
     <link rel="preload" href="/fonts/onest-v6-cyrillic_latin-700.woff2" type="font/woff2" as="font" crossorigin />
     <link rel="preload" href="/fonts/onest-v6-cyrillic_latin-800.woff2" type="font/woff2" as="font" crossorigin />
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="js/main.js"></script>
     <link rel="stylesheet" href="scss/index.scss" />
 
     <title>BUILDY VP - Welcome to The Buildy VP</title>
@@ -91,33 +91,36 @@
             <ul class="hero__list">
               <li class="hero__item">
                 <p class="hero__item-info">Property <span>Insurance</span></p>
-                <svg class="hero__item-icon">
-                  <use href="img/sprite.svg#insurance"></use>
+                <svg class="hero__item-icon" viewBox="0 0 100 100">
+                  <use href="/sprite.svg#insurance"></use>
                 </svg>
               </li>
 
               <li class="hero__item">
                 <p class="hero__item-info">Tax <span>Advantage</span></p>
-                <svg class="hero__item-icon">
-                  <use href="img/sprite.svg#advantage"></use>
+                <svg class="hero__item-icon" viewBox="0 0 100 100">
+                  <use href="/sprite.svg#advantage"></use>
                 </svg>
               </li>
 
               <li class="hero__item">
                 <p class="hero__item-info">24 Hour <span>Consultation</span></p>
-                <svg class="hero__item-icon">
-                  <use href="img/sprite.svg#consultation"></use>
+                <svg class="hero__item-icon" viewBox="0 0 100 100">
+                  <use href="/sprite.svg#consultation"></use>
                 </svg>
               </li>
             </ul>
           </div>
 
-          <svg class="hero__buildy">
-            <use href="img/sprite.svg#buildy"></use>
+          <svg class="hero__buildy" viewBox="0 0 1082 142">
+            <use href="/sprite.svg#buildy"></use>
           </svg>
         </section>
 
         <section class="about" id="about">
+          <svg class="about__sponsored" viewBox="0 0 964 108">
+            <use href="/sprite.svg#sponsored"></use>
+          </svg>
           <div class="container">
             <h2 class="about__title">our <span>sponsored</span></h2>
 
@@ -128,54 +131,58 @@
                   data-src="https://www.youtube.com/embed/ByAn8DF8Ykk"
                   type="button"
                 >
-                  <svg class="about__item-icon" width="86" height="100">
-                    <use href="img/sprite.svg#one"></use>
+                  <svg class="about__item-icon" viewBox="0 0 86 100">
+                    <use href="/sprite.svg#one"></use>
                   </svg>
                 </button>
               </li>
 
               <li class="about__item">
                 <button class="about__item-link" data-src="https://www.youtube.com/embed/ByAn8DF8Ykk" type="button">
-                  <svg class="about__item-icon" width="114" height="100">
-                    <use href="img/sprite.svg#two"></use>
+                  <svg class="about__item-icon" viewBox="0 0 114 100">
+                    <use href="/sprite.svg#two"></use>
                   </svg>
                 </button>
               </li>
 
               <li class="about__item">
                 <button class="about__item-link" data-src="https://www.youtube.com/embed/ByAn8DF8Ykk" type="button">
-                  <svg class="about__item-icon" width="104" height="100">
-                    <use href="img/sprite.svg#three"></use>
+                  <svg class="about__item-icon" viewBox="0 0 104 100">
+                    <use href="/sprite.svg#three"></use>
                   </svg>
                 </button>
               </li>
 
               <li class="about__item">
                 <button class="about__item-link" data-src="https://www.youtube.com/embed/ByAn8DF8Ykk" type="button">
-                  <svg class="about__item-icon" width="104" height="100">
-                    <use href="img/sprite.svg#four"></use>
+                  <svg class="about__item-icon" viewBox="0 0 104 100">
+                    <use href="/sprite.svg#four"></use>
                   </svg>
                 </button>
               </li>
 
               <li class="about__item">
                 <button class="about__item-link" data-src="https://www.youtube.com/embed/ByAn8DF8Ykk" type="button">
-                  <svg class="about__item-icon" width="144" height="100">
-                    <use href="img/sprite.svg#five"></use>
+                  <svg class="about__item-icon" viewBox="0 0 144 100">
+                    <use href="/sprite.svg#five"></use>
                   </svg>
                 </button>
               </li>
 
               <li class="about__item">
                 <button class="about__item-link" data-src="https://www.youtube.com/embed/ByAn8DF8Ykk" type="button">
-                  <svg class="about__item-icon" width="114" height="100">
-                    <use href="img/sprite.svg#six"></use>
+                  <svg class="about__item-icon" viewBox="0 0 114 100">
+                    <use href="/sprite.svg#six"></use>
                   </svg>
                 </button>
               </li>
             </ul>
 
             <div class="about__wrapper">
+              <div class="about__video">
+                <img src="/img/matthew-hamilton.jpg" alt="" />
+              </div>
+
               <div class="about__content">
                 <h3 class="about__subtitle">Find the Home That is <span>Perfect For You!</span></h3>
 
@@ -211,14 +218,170 @@
       </div>
 
       <section class="services" id="services">
+        <svg class="services__services" viewBox="0 0 754 108">
+          <use href="/sprite.svg#services"></use>
+        </svg>
+
         <div class="container">
-          <h2>title</h2>
+          <h2 class="services__title">our <span>services</span></h2>
+
+          <p class="services__description">
+            Lorem Ipsum is&nbsp;simply dummy text the printing &amp;&nbsp;typesetting the industry. Lorem is&nbsp;Ipsum
+            has been their industry standards dummy texts.
+          </p>
+
+          <ul class="services__list">
+            <li class="services__item">
+              <article class="services-card">
+                <span class="services-card__count">01</span>
+
+                <h3 class="services-card__title">Sell <span>Property</span></h3>
+                <p class="services-card__text">
+                  Lorem Ipsum is&nbsp;siimply dummy texts the type printing &amp;&nbsp;types setting the industry. Lorem
+                  is&nbsp;Ipsum has been a&nbsp;industry standard dummy text ever since their text printing 1500s, when
+                  an&nbsp;unknown priinters tooks a&nbsp;galley of&nbsp;type &amp;&nbsp;scrambled it&nbsp;to&nbsp;make
+                  a&nbsp;type specimen book. It&nbsp;has survived not only five centuries.
+                </p>
+                <a class="services-card__link" href="#">Read More</a>
+
+                <svg class="services-card__icon" viewBox="0 0 60 60">
+                  <use href="/sprite.svg#services-icon"></use>
+                </svg>
+              </article>
+            </li>
+
+            <li class="services__item">
+              <article class="services-card services-card__active">
+                <span class="services-card__count">02</span>
+                <h3 class="services-card__title">Legal <span>Investment</span></h3>
+                <p class="services-card__text">
+                  Lorem Ipsum is&nbsp;siimply dummy texts the type printing &amp;&nbsp;types setting the industry. Lorem
+                  is&nbsp;Ipsum has been a&nbsp;industry standard dummy text ever since their text printing 1500s, when
+                  an&nbsp;unknown priinters tooks a&nbsp;galley of&nbsp;type &amp;&nbsp;scrambled it&nbsp;to&nbsp;make
+                  a&nbsp;type specimen book. It&nbsp;has survived not only five centuries.
+                </p>
+                <a class="services-card__link" href="#">Read More</a>
+
+                <svg class="services-card__icon" viewBox="0 0 60 60">
+                  <use href="/sprite.svg#services-icon"></use>
+                </svg>
+              </article>
+            </li>
+
+            <li class="services__item">
+              <article class="services-card">
+                <span class="services-card__count">03</span>
+                <h3 class="services-card__title">Listing <span>Property</span></h3>
+                <p class="services-card__text">
+                  Lorem Ipsum is&nbsp;siimply dummy texts the type printing &amp;&nbsp;types setting the industry. Lorem
+                  is&nbsp;Ipsum has been a&nbsp;industry standard dummy text ever since their text printing 1500s, when
+                  an&nbsp;unknown priinters tooks a&nbsp;galley of&nbsp;type &amp;&nbsp;scrambled it&nbsp;to&nbsp;make
+                  a&nbsp;type specimen book. It&nbsp;has survived not only five centuries.
+                </p>
+                <a class="services-card__link" href="#">Read More</a>
+
+                <svg class="services-card__icon" viewBox="0 0 60 60">
+                  <use href="/sprite.svg#services-icon"></use>
+                </svg>
+              </article>
+            </li>
+
+            <li class="services__item">
+              <article class="services-card">
+                <span class="services-card__count">04</span>
+                <h3 class="services-card__title">Rent <span>Property</span></h3>
+                <p class="services-card__text">
+                  Lorem Ipsum is&nbsp;siimply dummy texts the type printing &amp;&nbsp;types setting the industry. Lorem
+                  is&nbsp;Ipsum has been a&nbsp;industry standard dummy text ever since their text printing 1500s, when
+                  an&nbsp;unknown priinters tooks a&nbsp;galley of&nbsp;type &amp;&nbsp;scrambled it&nbsp;to&nbsp;make
+                  a&nbsp;type specimen book. It&nbsp;has survived not only five centuries.
+                </p>
+                <a class="services-card__link" href="#">Read More</a>
+
+                <svg class="services-card__icon" viewBox="0 0 60 60">
+                  <use href="/sprite.svg#services-icon"></use>
+                </svg>
+              </article>
+            </li>
+
+            <li class="services__item">
+              <article class="services-card">
+                <span class="services-card__count">05</span>
+                <h3 class="services-card__title">Register <span>Agent</span></h3>
+                <p class="services-card__text">
+                  Lorem Ipsum is&nbsp;siimply dummy texts the type printing &amp;&nbsp;types setting the industry. Lorem
+                  is&nbsp;Ipsum has been a&nbsp;industry standard dummy text ever since their text printing 1500s, when
+                  an&nbsp;unknown priinters tooks a&nbsp;galley of&nbsp;type &amp;&nbsp;scrambled it&nbsp;to&nbsp;make
+                  a&nbsp;type specimen book. It&nbsp;has survived not only five centuries.
+                </p>
+                <a class="services-card__link" href="#">Read More</a>
+
+                <svg class="services-card__icon" viewBox="0 0 60 60">
+                  <use href="/sprite.svg#services-icon"></use>
+                </svg>
+              </article>
+            </li>
+
+            <li class="services__item">
+              <article class="services-card">
+                <span class="services-card__count">06</span>
+                <h3 class="services-card__title">Increase <span>Value</span></h3>
+                <p class="services-card__text">
+                  Lorem Ipsum is&nbsp;siimply dummy texts the type printing &amp;&nbsp;types setting the industry. Lorem
+                  is&nbsp;Ipsum has been a&nbsp;industry standard dummy text ever since their text printing 1500s, when
+                  an&nbsp;unknown priinters tooks a&nbsp;galley of&nbsp;type &amp;&nbsp;scrambled it&nbsp;to&nbsp;make
+                  a&nbsp;type specimen book. It&nbsp;has survived not only five centuries.
+                </p>
+                <a class="services-card__link" href="#">Read More</a>
+
+                <svg class="services-card__icon" viewBox="0 0 60 60">
+                  <use href="/sprite.svg#services-icon"></use>
+                </svg>
+              </article>
+            </li>
+          </ul>
+
+          <button class="services__button button">View more</button>
         </div>
       </section>
 
       <section class="contact" id="contact">
+        <div class="container contact__container">
+          <h2 class="contact__title">If You Have Any Question? <span>Please Contact Us!</span></h2>
+
+          <p class="contact__description">
+            Lorem Ipsum is&nbsp;simply dummy text the printing &amp;&nbsp;typesetting the industry. Lorem is&nbsp;Ipsum
+            has been their industry standards dummy texts.
+          </p>
+
+          <a class="contact__link" href="#">
+            <img class="contact__link-image" src="/img/contact-link.png" width="120" height="120" alt="Contact" />
+          </a>
+        </div>
+
+        <div class="contact__wrapper">
+          <span class="contact__world">idea</span>
+          <span class="contact__dot"></span>
+          <span class="contact__world">Work</span>
+          <span class="contact__dot"></span>
+          <span class="contact__world">Think</span>
+          <span class="contact__dot"></span>
+          <span class="contact__world">Creative</span>
+        </div>
+      </section>
+
+      <section class="projects">
         <div class="container">
-          <h2>title</h2>
+          <h2 class="projects__title">our <span>Latest Work</span></h2>
+
+          <p class="projects__description">
+            Lorem Ipsum is&nbsp;simply dummy text the printing &amp;&nbsp;typesetting the industry. Lorem is&nbsp;Ipsum
+            has been their industry standards dummy texts.
+          </p>
+
+          <div class="projects__wrapper"></div>
+
+          <button class="projects__button button" type="button">View more</button>
         </div>
       </section>
     </main>

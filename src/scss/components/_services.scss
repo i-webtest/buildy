@@ -1,0 +1,175 @@
+@use '../media' as *;
+@use '../variables' as *;
+
+.services {
+  position: relative;
+  background-color: $black;
+  padding: 15px 0 120px;
+
+  @include tablet {
+    padding: 15px 0 100px;
+  }
+
+  @include mobile {
+    padding: 15px 0 60px;
+  }
+
+  &__services {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 52px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include laptop {
+      font-size: 38px;
+    }
+
+    @include tablet {
+      font-size: 26px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    & span {
+      font-weight: 700;
+    }
+  }
+
+  &__description {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 50px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    &:nth-child(1) .services-card {
+      background-image: url('/img/01.jpg');
+      background-image: image-set(
+        url('/img/01.avif') type('image/avif') 1x,
+        url('/img/01@2x.avif') type('image/avif') 2x,
+        url('/img/01.webp') type('image/webp') 1x,
+        url('/img/01@2x.webp') type('image/webp') 2x,
+        url('/img/01.jpg') type('image/jpg') 1x,
+        url('/img/01@2x.jpg') type('image/jpg') 2x
+      );
+      background-size: auto;
+
+      @include tablet {
+        background-size: cover;
+      }
+    }
+
+    &:nth-child(2) .services-card {
+      background-image: url('/img/02.jpg');
+      background-image: image-set(
+        url('/img/02.avif') type('image/avif') 1x,
+        url('/img/02@2x.avif') type('image/avif') 2x,
+        url('/img/02.webp') type('image/webp') 1x,
+        url('/img/02@2x.webp') type('image/webp') 2x,
+        url('/img/02.jpg') type('image/jpg') 1x,
+        url('/img/02@2x.jpg') type('image/jpg') 2x
+      );
+
+      @include tablet {
+        background-size: cover;
+      }
+    }
+
+    &:nth-child(3) .services-card {
+      background-image: url('/img/03.jpg');
+      background-image: image-set(
+        url('/img/03.avif') type('image/avif') 1x,
+        url('/img/03@2x.avif') type('image/avif') 2x,
+        url('/img/03.webp') type('image/webp') 1x,
+        url('/img/03@2x.webp') type('image/webp') 2x,
+        url('/img/03.jpg') type('image/jpg') 1x,
+        url('/img/03@2x.jpg') type('image/jpg') 2x
+      );
+      background-size: auto;
+      background-position: bottom;
+
+      @include tablet {
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    &:nth-child(4) .services-card {
+      background-image: url('/img/04.jpg');
+      background-image: image-set(
+        url('/img/04.avif') type('image/avif') 1x,
+        url('/img/04@2x.avif') type('image/avif') 2x,
+        url('/img/04.webp') type('image/webp') 1x,
+        url('/img/04@2x.webp') type('image/webp') 2x,
+        url('/img/04.jpg') type('image/jpg') 1x,
+        url('/img/04@2x.jpg') type('image/jpg') 2x
+      );
+
+      @include tablet {
+        background-size: cover;
+      }
+    }
+
+    &:nth-child(5) .services-card {
+      background-image: url('/img/05.jpg');
+      background-image: image-set(
+        url('/img/05.avif') type('image/avif') 1x,
+        url('/img/05@2x.avif') type('image/avif') 2x,
+        url('/img/05.webp') type('image/webp') 1x,
+        url('/img/05@2x.webp') type('image/webp') 2x,
+        url('/img/05.jpg') type('image/jpg') 1x,
+        url('/img/05@2x.jpg') type('image/jpg') 2x
+      );
+      background-size: auto;
+
+      @include tablet {
+        background-size: cover;
+      }
+    }
+
+    &:nth-child(6) .services-card {
+      background-image: url('/img/06.jpg');
+      background-image: image-set(
+        url('/img/06.avif') type('image/avif') 1x,
+        url('/img/06@2x.avif') type('image/avif') 2x,
+        url('/img/06.webp') type('image/webp') 1x,
+        url('/img/06@2x.webp') type('image/webp') 2x,
+        url('/img/06.jpg') type('image/jpg') 1x,
+        url('/img/06@2x.jpg') type('image/jpg') 2x
+      );
+      background-size: auto;
+      background-position: bottom;
+
+      @include tablet {
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+}

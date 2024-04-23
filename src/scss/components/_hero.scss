@@ -1,10 +1,21 @@
 @use '../variables' as *;
+@use '../media' as *;
 
 .hero {
   position: relative;
   z-index: 1;
-  padding-top: 267px;
-  padding-bottom: 60px;
+  padding: 267px 0 120px;
+
+  @include laptop {
+  }
+
+  @include tablet {
+    padding: 170px 0 80px;
+  }
+
+  @include mobile {
+    padding: 120px 0 20px;
+  }
 
   &__container {
     display: grid;
@@ -13,6 +24,18 @@
       'title info'
       'text info'
       'button info';
+
+    @include tablet {
+      grid-template-areas:
+        'subtitle'
+        'title'
+        'text'
+        'button'
+        'info';
+    }
+
+    @include mobile {
+    }
   }
 
   &__subtitle {
@@ -22,6 +45,18 @@
     grid-area: subtitle;
     font-size: 20px;
     margin-bottom: 15px;
+
+    @include laptop {
+      font-size: 18px;
+    }
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include mobile {
+      font-size: 14px;
+    }
 
     &::before {
       content: '';
@@ -41,12 +76,36 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     margin-bottom: 15px;
+
+    @include laptop {
+      font-size: 44px;
+    }
+
+    @include tablet {
+      font-size: 32px;
+    }
+
+    @include mobile {
+      font-size: 22px;
+    }
   }
 
   &__title-thin {
     display: block;
     max-width: 660px;
     font-weight: 400;
+
+    @include laptop {
+      max-width: 470px;
+    }
+
+    @include tablet {
+      max-width: 340px;
+    }
+
+    @include mobile {
+      max-width: 240px;
+    }
   }
 
   &__title-bold {
@@ -57,12 +116,24 @@
     grid-area: text;
     max-width: 645px;
     margin-bottom: 35px;
+
+    @include laptop {
+      max-width: 570px;
+    }
   }
 
   &__button {
     grid-area: button;
     justify-self: start;
     margin-bottom: 133px;
+
+    @include tablet {
+      margin-bottom: 70px;
+    }
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
   }
 
   &__social {
@@ -73,6 +144,18 @@
     align-items: center;
     gap: 25px;
     transform: rotate(90deg);
+
+    @include laptop {
+    }
+
+    @include tablet {
+      top: 420px;
+      right: -210px;
+    }
+
+    @include mobile {
+      display: none;
+    }
 
     &::before {
       content: '';
@@ -89,6 +172,18 @@
     font-size: 18px;
     text-transform: uppercase;
     // transform: rotate(90deg);
+
+    @include laptop {
+      font-size: 16px;
+    }
+
+    @include tablet {
+      font-size: 14px;
+    }
+
+    @include mobile {
+      font-size: 12px;
+    }
   }
 
   &__social-dot {
@@ -100,13 +195,15 @@
   }
 
   &__list {
-    // position: relative;
-    // right: 0;
     display: flex;
     flex-direction: column;
     gap: 50px;
     grid-area: info;
     align-self: end;
+
+    @include tablet {
+      display: none;
+    }
   }
 
   &__item {
@@ -114,6 +211,10 @@
     justify-content: end;
     align-items: center;
     gap: 20px;
+
+    @include tablet {
+      gap: 10px;
+    }
   }
 
   &__item-info {
@@ -125,6 +226,18 @@
     text-transform: uppercase;
     text-align: right;
 
+    @include laptop {
+      font-size: 18px;
+    }
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include mobile {
+      font-size: 14px;
+    }
+
     & span {
       font-weight: 700;
     }
@@ -133,13 +246,39 @@
   &__item-icon {
     width: 100px;
     height: 100px;
+
+    @include laptop {
+      width: 80px;
+      height: 80px;
+    }
+
+    @include tablet {
+    }
+
+    @include mobile {
+    }
   }
 
   &__buildy {
     position: absolute;
     left: 0;
-    bottom: 100px;
+    bottom: 165px;
     width: 1082px;
     height: 142px;
+
+    @include laptop {
+      bottom: 190px;
+      width: 580px;
+    }
+
+    @include tablet {
+      bottom: 100px;
+      width: 480px;
+    }
+
+    @include mobile {
+      bottom: 10px;
+      width: 320px;
+    }
   }
 }

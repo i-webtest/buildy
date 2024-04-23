@@ -1,7 +1,9 @@
+@use '../media' as *;
+
 .main {
   &__wrapper {
     position: relative;
-    min-height: 2319px;
+    // min-height: 2319px;
     background-image: url('/img/main-bg.jpg');
     background-image: image-set(
       url('/img/main-bg.avif') type('image/avif') 1x,
@@ -14,6 +16,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
+
+    // @include laptop {
+    //   background-size: contain;
+    // }
 
     &::before {
       content: '';

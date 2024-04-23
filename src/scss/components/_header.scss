@@ -1,4 +1,4 @@
-// @use 'media' as *;
+@use '../media' as *;
 
 .header {
   position: absolute;
@@ -6,6 +6,10 @@
   left: 0;
   right: 0;
   z-index: 50;
+
+  @include tablet {
+    top: 15px;
+  }
 
   &__container {
     display: flex;
@@ -16,6 +20,10 @@
 
   &__logo {
     width: 221px;
+
+    @include laptop {
+      width: 150px;
+    }
   }
 
   &__nav {

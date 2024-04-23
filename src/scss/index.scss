@@ -6,10 +6,11 @@
 @use 'components/hero';
 @use 'components/about';
 @use 'components/services';
+@use 'components/services-card';
 @use 'components/contact';
-@use 'components/work';
-@use 'components/reviews';
-@use 'components/blog';
-@use 'components/footer';
+@use 'components/projects';
+// @use 'components/reviews';
+// @use 'components/blog';
+// @use 'components/footer';
 
 @import 'normalize.css';
