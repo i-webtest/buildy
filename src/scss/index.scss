@@ -9,8 +9,9 @@
 @use 'components/services-card';
 @use 'components/contact';
 @use 'components/projects';
-// @use 'components/reviews';
-// @use 'components/blog';
+@use 'components/reviews';
+@use 'components/slide';
+@use 'components/blog';
 // @use 'components/footer';
 
 @import 'normalize.css';

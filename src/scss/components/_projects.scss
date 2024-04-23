@@ -6,7 +6,7 @@
   background-image: url('/img/projects-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 120px 0;
+  padding: 135px 0 120px;
 
   @include tablet {
     padding: 100px 0;
@@ -22,6 +22,28 @@
     z-index: -1;
     inset: 0;
     background-color: $black;
+  }
+
+  &__projects {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 810px;
+
+    @include laptop {
+      width: 600px;
+    }
+
+    @include tablet {
+      width: 400px;
+      top: 80px;
+    }
+
+    @include mobile {
+      width: 280px;
+      top: 70px;
+    }
   }
 
   &__title {
@@ -81,13 +103,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    cursor: pointer;
     padding: 15px 20px;
 
-    &:hover &-details {
+    &:is(:hover, :active) &-details {
       bottom: 0;
     }
 
-    &:hover &-title {
+    &:is(:hover, :active) &-title {
       display: none;
     }
   }
@@ -126,6 +149,7 @@
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
     transition: 0.3s;
+    cursor: default;
     padding: 30px;
 
     @include laptop {

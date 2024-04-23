@@ -15,6 +15,20 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    width: 964px;
+
+    @include laptop {
+      width: 700px;
+    }
+
+    @include tablet {
+      width: 500px;
+    }
+
+    @include mobile {
+      top: 10px;
+      width: 280px;
+    }
   }
 
   &__title {

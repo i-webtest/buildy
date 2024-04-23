@@ -1,0 +1,248 @@
+@use '../variables' as *;
+@use '../media' as *;
+
+.blog {
+  position: relative;
+  background-color: $black;
+  padding: 15px 0 120px;
+
+  @include tablet {
+    padding: 15px 0 100px;
+  }
+
+  @include mobile {
+    padding: 15px 0 80px;
+  }
+
+  &__blog {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1080px;
+
+    @include laptop {
+      width: 750px;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 52px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+
+    @include laptop {
+      font-size: 38px;
+    }
+
+    @include tablet {
+      font-size: 26px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    & span {
+      font-weight: 700;
+    }
+  }
+
+  &__description {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto 50px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    flex-basis: 50%;
+  }
+
+  &__item:nth-child(1) &__card {
+    background-image: url('/img/blog-card-bg-1.jpg');
+  }
+
+  &__item:nth-child(2) &__card {
+    background-image: url('/img/blog-card-bg-2.jpg');
+  }
+
+  &__card {
+    position: relative;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+    &:is(:hover, :active) {
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+    }
+
+    &:is(:hover, :active) &-details {
+      bottom: 20px;
+
+      @include mobile {
+        bottom: 50px;
+      }
+    }
+  }
+
+  &__card-intersect {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+  }
+
+  &__card-details {
+    position: absolute;
+    z-index: 2;
+    bottom: -24%;
+    left: 0;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: end;
+    width: 100%;
+    height: 52%;
+    color: #fff;
+    // background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+    cursor: default;
+    padding: 30px;
+
+    @include mobile {
+      bottom: -32%;
+      padding: 10px;
+    }
+  }
+
+  &__card-label {
+    display: block;
+    width: max-content;
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 0.01em;
+    color: $black;
+    background-color: $white;
+    padding: 2px 10px;
+    margin-bottom: 10px;
+  }
+
+  &__card-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+
+    @include mobile {
+      font-size: 14px;
+    }
+
+    & span {
+      font-weight: 700;
+    }
+  }
+
+  &__card-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+
+  &__card-user {
+    margin-right: 10px;
+
+    @include mobile {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__card-user-title {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    margin-right: 25px;
+
+    @include mobile {
+      font-size: 12px;
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__card-date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+
+    @include mobile {
+      font-size: 12px;
+    }
+
+    &::before {
+      content: '';
+      width: 21px;
+      height: 21px;
+      background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.89661 5.89792L6.80191 6.80322' stroke='white' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' /%3E%3Cpath d='M3.56091 11.5015H4.8414' stroke='white' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' /%3E%3Cpath d='M18.1586 11.5015H19.4391' stroke='white' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' /%3E%3Cpath d='M5.89661 17.1047L6.80191 16.1994' stroke='white' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' /%3E%3Cpath d='M16.1981 6.80322L17.1034 5.89792' stroke='white' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' /%3E%3Cpath d='M14.2151 14.2166L11.5 11.5015V7.66003' stroke='white' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' /%3E%3Cpath d='M11.5 3.56229V4.84277' stroke='white' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' /%3E%3Cpath d='M11.5 18.1599V19.4404' stroke='white' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' /%3E%3Cpath d='M16.1981 16.1994L17.1034 17.1047' stroke='white' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' /%3E%3Cpath d='M11.4999 19.4404C7.12238 19.4404 3.56091 15.879 3.56091 11.5014C3.56091 7.12385 7.12238 3.56238 11.4999 3.56238C15.8775 3.56238 19.439 7.12385 19.439 11.5014C19.439 15.879 15.8775 19.4404 11.4999 19.4404Z' stroke='white' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' /%3E%3Cpath d='M18.9268 18.8552C18.8864 18.8552 18.8537 18.888 18.8537 18.9284C18.8537 18.9688 18.8864 19.0016 18.9268 19.0016C18.9672 19.0016 19 18.9688 19 18.9284C19 18.888 18.9672 18.8552 18.9268 18.8552Z' fill='white' stroke='white' /%3E%3Cpath d='M17.4509 20.1562C15.7601 21.3202 13.7104 22.0015 11.5 22.0015C5.69683 22.0015 1 17.3055 1 11.5015C1 5.69829 5.69598 1.00146 11.5 1.00146C17.3032 1.00146 22 5.69744 22 11.5015C22 13.7117 21.3188 15.7615 20.1546 17.4523' stroke='white' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__card-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: max-content;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 0;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 14px;
+    }
+
+    @include mobile {
+      font-size: 12px;
+    }
+
+    &::after {
+      content: '';
+      width: 11px;
+      height: 11px;
+      background-image: url("data:image/svg+xml,%3Csvg width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.66667 0C3.82243 0.000172766 3.97224 0.059815 4.0855 0.166741C4.19876 0.273666 4.26692 0.419805 4.27605 0.575297C4.28518 0.730789 4.23459 0.883898 4.13462 1.00334C4.03464 1.12279 3.89284 1.19955 3.73817 1.21794L3.66667 1.22222H1.22222V9.77778H9.77778V4.27778C9.77795 4.12202 9.83759 3.9722 9.94452 3.85894C10.0514 3.74568 10.1976 3.67752 10.3531 3.66839C10.5086 3.65927 10.6617 3.70986 10.7811 3.80983C10.9006 3.9098 10.9773 4.05161 10.9957 4.20628L11 4.27778V9.77778C11.0001 10.0861 10.8836 10.3831 10.674 10.6092C10.4643 10.8353 10.1769 10.9738 9.86944 10.9969L9.77778 11H1.22222C0.91387 11.0001 0.616876 10.8836 0.390776 10.674C0.164677 10.4643 0.0261821 10.1769 0.00305569 9.86944L6.12749e-08 9.77778V1.22222C-9.75206e-05 0.91387 0.11636 0.616876 0.326026 0.390776C0.535692 0.164676 0.823072 0.026182 1.13056 0.00305563L1.22222 0H3.66667ZM10.0913 0C10.4714 0 10.6926 0.286 10.7482 0.523111C10.8038 0.760833 10.7329 1.1165 10.3907 1.28517L10.1377 1.41411L10.0375 1.46789L9.81567 1.59072L9.56817 1.73494L9.29989 1.89994C8.88311 2.16272 8.40767 2.49639 7.92978 2.90033C6.919 3.75528 5.93878 4.89317 5.46883 6.30422C5.41762 6.45803 5.3074 6.5852 5.16242 6.65774C5.01745 6.73029 4.84959 6.74227 4.69578 6.69106C4.54197 6.63984 4.4148 6.52962 4.34226 6.38464C4.26971 6.23967 4.25773 6.07181 4.30894 5.918C4.87606 4.21667 6.03411 2.90339 7.14083 1.96717C7.40422 1.74411 7.66761 1.54061 7.92183 1.35606L8.11128 1.22222H6.72222C6.56646 1.22205 6.41665 1.16241 6.30339 1.05548C6.19012 0.948556 6.12197 0.802418 6.11284 0.646925C6.10371 0.491433 6.1543 0.338324 6.25427 0.21888C6.35424 0.0994365 6.49605 0.0226744 6.65072 0.00427776L6.72222 0H10.0913Z' fill='white' /%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+}

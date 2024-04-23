@@ -1,0 +1,137 @@
+@use '../variables' as *;
+@use '../media' as *;
+
+.reviews {
+  background-image: url('/img/projects-bg.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px 0 120px;
+
+  @include tablet {
+    padding: 15px 0 100px;
+  }
+
+  @include mobile {
+    padding: 15px 0 80px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-color: $black;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__testimonial {
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    width: 1060px;
+
+    @include laptop {
+      width: 690px;
+    }
+
+    @include tablet {
+      width: 440px;
+    }
+
+    @include mobile {
+      width: 280px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 52px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    @include laptop {
+      font-size: 38px;
+    }
+
+    @include tablet {
+      font-size: 26px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    & span {
+      font-weight: 700;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 25px;
+
+    @include tablet {
+      gap: 10px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+    background-color: $white;
+
+    @include tablet {
+      width: 40px;
+      height: 40px;
+    }
+
+    &:disabled {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &__btn_prev {
+  }
+
+  &__btn_next {
+  }
+
+  &__description {
+    max-width: 700px;
+    margin-bottom: 50px;
+
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+
+  &__slider {
+  }
+}
+
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}

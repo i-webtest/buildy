@@ -1,0 +1,59 @@
+@use '../media' as *;
+
+.slide {
+  max-width: 430px;
+
+  @include mobile {
+    max-width: 100%;
+  }
+
+  &__raiting {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 15px;
+  }
+
+  &__raiting-star {
+    width: 15px;
+    height: 15px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__user {
+    @include tablet {
+      width: 50px;
+    }
+  }
+
+  &__user-wrapper {
+  }
+
+  &__user-name {
+    font-weight: 700;
+    font-size: 20px;
+
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+
+  &__user-gender {
+    letter-spacing: 0.01em;
+  }
+}
