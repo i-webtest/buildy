@@ -63,7 +63,7 @@
 
     <main class="main">
       <div class="main__wrapper">
-        <section class="hero">
+        <section class="hero" id="hero">
           <div class="container hero__container">
             <p class="hero__subtitle">Welcome to The Buildy VP</p>
 
@@ -371,7 +371,7 @@
         </div>
       </section>
 
-      <section class="projects">
+      <section class="projects" id="projects">
         <svg class="projects__projects" viewBox="0 0 810 108">
           <use href="/sprite.svg#projects"></use>
         </svg>
@@ -629,7 +629,7 @@
         </div>
       </section>
 
-      <section class="blog">
+      <section class="blog" id="blog">
         <svg class="blog__blog" viewBox="0 0 1080 108">
           <use href="/sprite.svg#blog"></use>
         </svg>
@@ -730,7 +730,173 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer__container"></div>
+      <div class="container footer__container">
+        <div class="footer__wrapper">
+          <div class="footer__content">
+            <div class="footer__info">
+              <img class="footer__logo" src="/img/logo.svg" width="221" height="62" alt="Logo Buildy" />
+
+              <p class="footer__info-description">
+                Lorem Ipsum is simply dummy text of the printings & typesettings industry’s. Lorem Ipsum has been their
+                industry.
+              </p>
+
+              <address class="footer__address">
+                <a class="footer__address-link footer__address-link_phone" href="tel:+1 123-456-0606">
+                  +1 123-456-0606
+                </a>
+                <a class="footer__address-link footer__address-link_mail" href="mailto:buildyvp@example.com">
+                  buildyvp@example.com
+                </a>
+                <a class="footer__address-link footer__address-link_location" href="#">
+                  120 King St, Charleston SC 29401, USA
+                </a>
+              </address>
+            </div>
+
+            <div class="footer__photo">
+              <h3 class="footer__title">Instagram</h3>
+
+              <ul class="footer__photo-list">
+                <li class="footer__photo-item">
+                  <img class="footer__photo-image" src="/img/inst-1.jpg" width="90" height="90" alt="Instagram" />
+                  <div class="footer__photo-details">
+                    <a class="footer__photo-link" href="#">
+                      <svg class="footer__photo-icon" viewBox="0 0 22 22">
+                        <use href="/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="footer__photo-item">
+                  <img class="footer__photo-image" src="/img/inst-2.jpg" width="90" height="90" alt="Instagram" />
+                  <div class="footer__photo-details">
+                    <a class="footer__photo-link" href="#">
+                      <svg class="footer__photo-icon" viewBox="0 0 22 22">
+                        <use href="/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="footer__photo-item">
+                  <img class="footer__photo-image" src="/img/inst-3.jpg" width="90" height="90" alt="Instagram" />
+                  <div class="footer__photo-details">
+                    <a class="footer__photo-link" href="#">
+                      <svg class="footer__photo-icon" viewBox="0 0 22 22">
+                        <use href="/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="footer__photo-item">
+                  <img class="footer__photo-image" src="/img/inst-4.jpg" width="90" height="90" alt="Instagram" />
+                  <div class="footer__photo-details">
+                    <a class="footer__photo-link" href="#">
+                      <svg class="footer__photo-icon" viewBox="0 0 22 22">
+                        <use href="/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="footer__photo-item">
+                  <img class="footer__photo-image" src="/img/inst-5.jpg" width="90" height="90" alt="Instagram" />
+                  <div class="footer__photo-details">
+                    <a class="footer__photo-link" href="#">
+                      <svg class="footer__photo-icon" viewBox="0 0 22 22">
+                        <use href="/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="footer__photo-item">
+                  <img class="footer__photo-image" src="/img/inst-6.jpg" width="90" height="90" alt="Instagram" />
+                  <div class="footer__photo-details">
+                    <a class="footer__photo-link" href="#">
+                      <svg class="footer__photo-icon" viewBox="0 0 22 22">
+                        <use href="/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__news">
+              <h3 class="footer__title">Newsletter</h3>
+              <p class="footer__news-description">
+                Lorem Ipsum is simply dummy textt of the printing & types setting industrys.
+              </p>
+
+              <form class="footer__form" action="#">
+                <input class="footer__form-input" type="email" placeholder="Enter Your Email" />
+                <button class="footer__form-submit button" type="submit">Submit</button>
+              </form>
+
+              <ul class="footer__social">
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg class="footer__social-facebook" viewBox="0 0 12 25">
+                      <use href="/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg class="footer__social-in" viewBox="0 0 21 21">
+                      <use href="/sprite.svg#in"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg class="footer__social-twitter" viewBox="0 0 22 18">
+                      <use href="/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__navigation">
+            <ul class="footer__navigation-list">
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#hero">Home</a>
+              </li>
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#about">About&nbsp;us</a>
+              </li>
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#services">Services</a>
+              </li>
+            </ul>
+
+            <ul class="footer__navigation-list">
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#projects">Project</a>
+              </li>
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#blog">Blog</a>
+              </li>
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <button class="footer__btn-top"></button>
+        </div>
+
+        <div class="footer__wrapper-bottom">
+          <p class="footer__copyright">&copy; BUILDY VP Real Estate. All Right Reserved.</p>
+
+          <div class="footer__terms">
+            <a class="footer__terms-link" href="#">Privacy Policy</a>
+            <span class="footer__terms-dot"></span>
+            <a class="footer__terms-link" href="#">Terms & Condition</a>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
