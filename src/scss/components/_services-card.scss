@@ -141,7 +141,7 @@
     }
   }
 
-  &__active {
+  &_active {
     max-width: 450px;
     cursor: default;
 
@@ -154,15 +154,15 @@
     }
   }
 
-  &__active &__text {
+  &_active &__text {
     display: block;
   }
 
-  &__active &__icon {
+  &_active &__icon {
     display: block;
   }
 
-  &__active &__count {
+  &_active &__count {
     font-weight: 700;
     text-align: left;
     margin: 0 auto 30px 0;
@@ -180,11 +180,11 @@
     }
   }
 
-  &__active &__link {
+  &_active &__link {
     display: flex;
   }
 
-  &__active &__title {
+  &_active &__title {
     transform: none;
     margin-bottom: 15px;
   }

@@ -5,12 +5,12 @@ export const accordeon = () => {
 
   servicesCard.forEach((card) => {
     card.addEventListener('click', () => {
-      if (!card.classList.contains('services-card__active')) {
+      if (!card.classList.contains('services-card_active')) {
         servicesCard.forEach((item) => {
-          item.classList.remove('services-card__active');
+          item.classList.remove('services-card_active');
         });
 
-        card.classList.add('services-card__active');
+        card.classList.add('services-card_active');
 
         const tl = gsap.timeline({
           defaults: {

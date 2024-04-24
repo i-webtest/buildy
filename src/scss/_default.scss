@@ -81,12 +81,34 @@ iframe {
 }
 
 .button {
+  position: relative;
+  z-index: 1;
   display: block;
   font-weight: 600;
   text-transform: uppercase;
   border: 2px solid $white;
   color: $white;
   padding: 13px 23px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: $white;
+    transition: width 0.5s ease;
+  }
+
+  &:hover {
+    color: $black;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
 }
 
 .container {
