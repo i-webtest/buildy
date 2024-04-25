@@ -54,12 +54,19 @@ export const trailers = () => {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 119px;
-            height: 119px;
+            width: 60px;
+            height: 60px;
             background-color: transparent;
             border: none;
             cursor: pointer;
           }
+
+          // @media (max-width: 520px) {
+          //   #button {
+          //     width: 60px;
+          //     height: 60px;
+          //   }
+          // }
         </style>
 
         <a href="https://www.youtube.com/embed/${idVideo}?autoplay=1">

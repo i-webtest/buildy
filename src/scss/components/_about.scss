@@ -210,7 +210,7 @@
     overflow: hidden;
 
     @include tablet {
-      max-width: 350px;
+      width: 100%;
     }
 
     & img {
@@ -272,5 +272,12 @@
   }
 
   &__button {
+  }
+}
+
+#button {
+  @include mobile {
+    width: 60px;
+    height: 60px;
   }
 }

@@ -4,6 +4,11 @@
 .projects {
   position: relative;
   background-image: url('/img/projects-bg.png');
+  background-image: image-set(
+    url('/img/projects-bg.avif') type('image/avif') 1x,
+    url('/img/projects-bg.webp') type('image/webp') 1x,
+    url('/img/projects-bg.png') type('image/png') 1x
+  );
   background-repeat: no-repeat;
   background-size: cover;
   padding: 135px 0 120px;
@@ -231,6 +236,11 @@
   align-self: end;
   height: 300px;
   background-image: url('/img/pacific.jpg');
+  background-image: image-set(
+    url('/img/pacific.avif') type('image/avif') 1x,
+    url('/img/pacific.webp') type('image/webp') 1x,
+    url('/img/pacific.png') type('image/png') 1x
+  );
 
   @include tablet {
     grid-column: 1/2;
@@ -241,6 +251,11 @@
   grid-column: 3/5;
   height: 500px;
   background-image: url('/img/greenside.jpg');
+  background-image: image-set(
+    url('/img/greenside.avif') type('image/avif') 1x,
+    url('/img/greenside.webp') type('image/webp') 1x,
+    url('/img/greenside.png') type('image/png') 1x
+  );
 
   @include tablet {
     grid-column: 2/3;
@@ -252,6 +267,11 @@
   align-self: end;
   height: 400px;
   background-image: url('/img/chili.jpg');
+  background-image: image-set(
+    url('/img/chili.avif') type('image/avif') 1x,
+    url('/img/chili.webp') type('image/webp') 1x,
+    url('/img/chili.png') type('image/png') 1x
+  );
 }
 
 .nou {
@@ -259,6 +279,11 @@
   grid-row: 2/3;
   height: 300px;
   background-image: url('/img/nou.jpg');
+  background-image: image-set(
+    url('/img/nou.avif') type('image/avif') 1x,
+    url('/img/nou.webp') type('image/webp') 1x,
+    url('/img/nou.png') type('image/png') 1x
+  );
 }
 
 .rego {
@@ -266,4 +291,9 @@
   grid-row: 2/3;
   height: 430px;
   background-image: url('/img/rego.jpg');
+  background-image: image-set(
+    url('/img/rego.avif') type('image/avif') 1x,
+    url('/img/rego.webp') type('image/webp') 1x,
+    url('/img/rego.png') type('image/png') 1x
+  );
 }

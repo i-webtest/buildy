@@ -17,13 +17,741 @@
     <link rel="stylesheet" href="scss/index.scss" />
 
     <title>BUILDY VP - Welcome to The Buildy VP</title>
+
+    <!-- <style>
+      :root {
+        --swiper-theme-color: #007aff;
+      }
+
+      :host {
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+      }
+
+      :root {
+        --swiper-navigation-size: 44px;
+      }
+
+      html {
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      main {
+        display: block;
+      }
+
+      h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+      }
+
+      a {
+        background-color: transparent;
+      }
+
+      img {
+        border-style: none;
+      }
+
+      button {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+
+      button {
+        overflow: visible;
+      }
+
+      button {
+        text-transform: none;
+      }
+
+      button,
+      [type='button'] {
+        -webkit-appearance: button;
+      }
+
+      button::-moz-focus-inner,
+      [type='button']::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+
+      button:-moz-focusring,
+      [type='button']:-moz-focusring {
+        outline: 1px dotted ButtonText;
+      }
+
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+
+      :root {
+        --font-size: 16px;
+      }
+
+      @media (max-width: 1240px) {
+        :root {
+          --font-size: 14px;
+        }
+      }
+
+      @media (max-width: 520px) {
+        :root {
+          --font-size: 12px;
+        }
+      }
+
+      @font-face {
+        font-display: swap;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        src: local('Poppins Light'), local('Poppins-Light'), url(../fonts/poppins-v21-latin-300.woff2) format('woff2');
+      }
+
+      @font-face {
+        font-display: swap;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 400;
+        src: local('Poppins Regular'), local('Poppins-Regular'),
+          url(../fonts/poppins-v21-latin-regular.woff2) format('woff2');
+      }
+
+      @font-face {
+        font-display: swap;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        src: local('Poppins Medium'), local('Poppins-Medium'), url(../fonts/poppins-v21-latin-500.woff2) format('woff2');
+      }
+
+      @font-face {
+        font-display: swap;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        src: local('Poppins SemiBold'), local('Poppins-SemiBold'),
+          url(../fonts/poppins-v21-latin-600.woff2) format('woff2');
+      }
+
+      @font-face {
+        font-display: swap;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 700;
+        src: local('Poppins Bold'), local('Poppins-Bold'), url(../fonts/poppins-v21-latin-700.woff2) format('woff2');
+      }
+
+      @font-face {
+        font-display: swap;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 800;
+        src: local('Poppins ExtraBold'), local('Poppins-ExtraBold'),
+          url(../fonts/poppins-v21-latin-800.woff2) format('woff2');
+      }
+
+      html {
+        position: relative;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        position: relative;
+        overflow-x: hidden;
+        min-width: 320px;
+        min-height: 100vh;
+        font-family: Poppins, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        font-size: var(--font-size);
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        color: #fff;
+        background-color: #000c;
+      }
+
+      img,
+      svg {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      svg {
+        max-height: 100%;
+      }
+
+      button {
+        padding: 0;
+        border: none;
+        background-color: transparent;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      h1,
+      p {
+        margin: 0;
+      }
+
+      .button {
+        position: relative;
+        z-index: 1;
+        display: block;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: 2px solid #fff;
+        color: #fff;
+        padding: 13px 23px;
+      }
+
+      .button:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #fff;
+      }
+
+      .container {
+        max-width: 1454px;
+        padding: 0 52px;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 940px) {
+        .container {
+          padding: 0 46px;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .container {
+          padding: 0 14px;
+        }
+      }
+
+      .header {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        right: 0;
+        z-index: 50;
+      }
+
+      @media (max-width: 940px) {
+        .header {
+          top: 15px;
+        }
+      }
+
+      .header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 45px;
+      }
+
+      .header__logo {
+        width: 221px;
+      }
+
+      @media (max-width: 1240px) {
+        .header__logo {
+          width: 150px;
+        }
+      }
+
+      .navigation {
+        max-width: 826px;
+        width: 100%;
+      }
+
+      @media (max-width: 940px) {
+        .navigation {
+          display: none;
+        }
+      }
+
+      .navigation__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .navigation__link {
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      .navigation__link.active {
+        text-shadow: 0 0 3px #fff, 0 0 1px #fff;
+      }
+
+      .navigation__button {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .hamburger {
+        position: relative;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+      }
+
+      @media (max-width: 940px) {
+        .hamburger {
+          display: flex;
+        }
+      }
+
+      .hamburger span,
+      .hamburger:before,
+      .hamburger:after {
+        width: 24px;
+        height: 2px;
+        background-color: #fff;
+      }
+
+      .hamburger:before,
+      .hamburger:after {
+        content: '';
+        position: absolute;
+      }
+
+      .hamburger:before {
+        animation: moveTopLineRev 0.4s forwards;
+      }
+
+      .hamburger span {
+        animation: moveMidLineRev 0.4s forwards;
+      }
+
+      .hamburger:after {
+        animation: moveBotLineRev 0.4s forwards;
+      }
+
+      @keyframes moveTopLineRev {
+        0% {
+          transform: scale(1) translateY(0) rotate(-45deg);
+        }
+
+        25% {
+          transform: scale(1.2) translateY(0) rotate(-45deg);
+        }
+
+        50% {
+          transform: scale(1) translateY(0) rotate(-45deg);
+        }
+
+        75% {
+          transform: scale(1) translateY(0) rotate(0);
+        }
+
+        to {
+          transform: scale(1) translateY(-7px);
+        }
+      }
+
+      @keyframes moveMidLineRev {
+        0% {
+          opacity: 0;
+        }
+
+        25% {
+          opacity: 0;
+        }
+
+        50% {
+          opacity: 0;
+        }
+
+        75% {
+          opacity: 1;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes moveBotLineRev {
+        0% {
+          transform: scale(1) translateY(0) rotate(45deg);
+        }
+
+        25% {
+          transform: scale(1.2) translateY(0) rotate(45deg);
+        }
+
+        50% {
+          transform: scale(1) translateY(0) rotate(45deg);
+        }
+
+        75% {
+          transform: scale(1) translateY(0) rotate(0);
+        }
+
+        to {
+          transform: scale(1) translateY(7px);
+        }
+      }
+
+      .main__wrapper {
+        position: relative;
+        background-image: url(/buildy/assets/main-bg-BSZHR70Q.jpg);
+        background-image: image-set(
+          url(/buildy/assets/main-bg-BWYiaEEE.avif) type('image/avif') 1x,
+          url(/buildy/assets/main-bg-SPbFJPLv.webp) type('image/webp') 1x,
+          url(/buildy/assets/main-bg-BSZHR70Q.jpg) type('image/jpg') 1x
+        );
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+      }
+
+      .main__wrapper:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000c;
+      }
+
+      .hero {
+        position: relative;
+        z-index: 1;
+        padding: 267px 0 120px;
+      }
+
+      @media (max-width: 940px) {
+        .hero {
+          padding: 170px 0 80px;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .hero {
+          padding: 120px 0 20px;
+        }
+      }
+
+      .hero__container {
+        display: grid;
+        grid-template-areas: 'subtitle .' 'title info' 'text info' 'button info';
+      }
+
+      @media (max-width: 940px) {
+        .hero__container {
+          grid-template-areas: 'subtitle' 'title' 'text' 'button' 'info';
+        }
+      }
+
+      .hero__subtitle {
+        position: relative;
+        display: flex;
+        align-items: center;
+        grid-area: subtitle;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+
+      @media (max-width: 1240px) {
+        .hero__subtitle {
+          font-size: 18px;
+        }
+      }
+
+      @media (max-width: 940px) {
+        .hero__subtitle {
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .hero__subtitle {
+          font-size: 14px;
+        }
+      }
+
+      .hero__subtitle:before {
+        content: '';
+        position: absolute;
+        left: -125px;
+        max-width: 100px;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+      }
+
+      .hero__title {
+        grid-area: title;
+        font-size: 62px;
+        line-height: 1.35484;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+
+      @media (max-width: 1240px) {
+        .hero__title {
+          font-size: 44px;
+        }
+      }
+
+      @media (max-width: 940px) {
+        .hero__title {
+          font-size: 32px;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .hero__title {
+          font-size: 22px;
+        }
+      }
+
+      .hero__title-thin {
+        display: block;
+        max-width: 660px;
+        font-weight: 400;
+      }
+
+      @media (max-width: 1240px) {
+        .hero__title-thin {
+          max-width: 470px;
+        }
+      }
+
+      @media (max-width: 940px) {
+        .hero__title-thin {
+          max-width: 340px;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .hero__title-thin {
+          max-width: 240px;
+        }
+      }
+
+      .hero__title-bold {
+        font-weight: 700;
+      }
+
+      .hero__description {
+        grid-area: text;
+        max-width: 645px;
+        margin-bottom: 35px;
+      }
+
+      @media (max-width: 1240px) {
+        .hero__description {
+          max-width: 570px;
+        }
+      }
+
+      .hero__button {
+        grid-area: button;
+        justify-self: start;
+        margin-bottom: 133px;
+      }
+
+      @media (max-width: 940px) {
+        .hero__button {
+          margin-bottom: 70px;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .hero__button {
+          margin-bottom: 30px;
+        }
+      }
+
+      .hero__social {
+        position: absolute;
+        top: 480px;
+        right: -230px;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        transform: rotate(90deg);
+      }
+
+      @media (max-width: 940px) {
+        .hero__social {
+          top: 420px;
+          right: -210px;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .hero__social {
+          display: none;
+        }
+      }
+
+      .hero__social:before {
+        content: '';
+        position: absolute;
+        left: -105px;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+      }
+
+      .hero__social-link {
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+
+      @media (max-width: 1240px) {
+        .hero__social-link {
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 940px) {
+        .hero__social-link {
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .hero__social-link {
+          font-size: 12px;
+        }
+      }
+
+      .hero__social-dot {
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: #fff;
+        border-radius: 100%;
+      }
+
+      .hero__list {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        grid-area: info;
+        align-self: end;
+      }
+
+      @media (max-width: 940px) {
+        .hero__list {
+          display: none;
+        }
+      }
+
+      .hero__item {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 20px;
+      }
+
+      @media (max-width: 940px) {
+        .hero__item {
+          gap: 10px;
+        }
+      }
+
+      .hero__item-info {
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.33333;
+        text-transform: uppercase;
+        text-align: right;
+      }
+
+      @media (max-width: 1240px) {
+        .hero__item-info {
+          font-size: 18px;
+        }
+      }
+
+      @media (max-width: 940px) {
+        .hero__item-info {
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .hero__item-info {
+          font-size: 14px;
+        }
+      }
+
+      .hero__item-info span {
+        font-weight: 700;
+      }
+
+      .hero__item-icon {
+        width: 100px;
+        height: 100px;
+      }
+
+      @media (max-width: 1240px) {
+        .hero__item-icon {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    </style> -->
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
         <img class="header__logo" src="/img/logo.svg" width="221" height="62" alt="Logo Buildy" />
 
-        <button class="hamburger" type="button">
+        <button class="hamburger" type="button" aria-label="Open menu">
           <span></span>
         </button>
 
@@ -42,7 +770,7 @@
             </li>
 
             <li class="navigation__item">
-              <a class="navigation__link" href="#project">Project</a>
+              <a class="navigation__link" href="#projects">Project</a>
             </li>
 
             <li class="navigation__item">
@@ -131,6 +859,7 @@
                   class="about__item-link about__item-link_active"
                   data-src="https://www.youtube.com/embed/ebx5Y5qOmTM"
                   type="button"
+                  aria-label="Trailer"
                 >
                   <svg class="about__item-icon" viewBox="0 0 86 100">
                     <use href="/sprite.svg#one"></use>
@@ -139,7 +868,12 @@
               </li>
 
               <li class="about__item">
-                <button class="about__item-link" data-src="https://www.youtube.com/embed/pnRscqkN3vw" type="button">
+                <button
+                  class="about__item-link"
+                  data-src="https://www.youtube.com/embed/pnRscqkN3vw"
+                  type="button"
+                  aria-label="Trailer"
+                >
                   <svg class="about__item-icon" viewBox="0 0 114 100">
                     <use href="/sprite.svg#two"></use>
                   </svg>
@@ -147,7 +881,12 @@
               </li>
 
               <li class="about__item">
-                <button class="about__item-link" data-src="https://www.youtube.com/embed/tHMPR7flpf4" type="button">
+                <button
+                  class="about__item-link"
+                  data-src="https://www.youtube.com/embed/tHMPR7flpf4"
+                  type="button"
+                  aria-label="Trailer"
+                >
                   <svg class="about__item-icon" viewBox="0 0 104 100">
                     <use href="/sprite.svg#three"></use>
                   </svg>
@@ -155,7 +894,12 @@
               </li>
 
               <li class="about__item">
-                <button class="about__item-link" data-src="https://www.youtube.com/embed/V4awZOrzyjo" type="button">
+                <button
+                  class="about__item-link"
+                  data-src="https://www.youtube.com/embed/V4awZOrzyjo"
+                  type="button"
+                  aria-label="Trailer"
+                >
                   <svg class="about__item-icon" viewBox="0 0 104 100">
                     <use href="/sprite.svg#four"></use>
                   </svg>
@@ -163,7 +907,12 @@
               </li>
 
               <li class="about__item">
-                <button class="about__item-link" data-src="https://www.youtube.com/embed/azXdMsL731o" type="button">
+                <button
+                  class="about__item-link"
+                  data-src="https://www.youtube.com/embed/azXdMsL731o"
+                  type="button"
+                  aria-label="Trailer"
+                >
                   <svg class="about__item-icon" viewBox="0 0 144 100">
                     <use href="/sprite.svg#five"></use>
                   </svg>
@@ -171,7 +920,12 @@
               </li>
 
               <li class="about__item">
-                <button class="about__item-link" data-src="https://www.youtube.com/embed/JEMstOX3vJQ" type="button">
+                <button
+                  class="about__item-link"
+                  data-src="https://www.youtube.com/embed/JEMstOX3vJQ"
+                  type="button"
+                  aria-label="Trailer"
+                >
                   <svg class="about__item-icon" viewBox="0 0 114 100">
                     <use href="/sprite.svg#six"></use>
                   </svg>
@@ -407,7 +1161,7 @@
             </div>
 
             <div class="reviews__buttons">
-              <button class="reviews__btn reviews__btn_prev" type="button">
+              <button class="reviews__btn reviews__btn_prev" type="button" aria-label="Prev slide">
                 <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M9.74701 16.6833C10.0449 16.392 10.1879 16.04 10.176 15.6273C10.1631 15.2147 10.0077 14.8627 9.70977 14.5714L5.50174 10.4567H22.1104C22.5325 10.4567 22.8865 10.3169 23.1725 10.0373C23.4575 9.7586 23.6 9.41292 23.6 9.00025C23.6 8.58757 23.4575 8.24141 23.1725 7.96176C22.8865 7.68308 22.5325 7.54375 22.1104 7.54375H5.50174L9.74701 3.39271C10.0449 3.10141 10.1939 2.75525 10.1939 2.35423C10.1939 1.95418 10.0449 1.6085 9.74701 1.3172C9.44909 1.0259 9.09507 0.880249 8.68495 0.880249C8.27581 0.880249 7.92229 1.0259 7.62437 1.3172L0.809608 7.9807C0.660652 8.12635 0.554892 8.28413 0.492329 8.45406C0.430761 8.62399 0.399975 8.80605 0.399975 9.00025C0.399975 9.19445 0.430761 9.37651 0.492329 9.54644C0.554892 9.71636 0.660652 9.87415 0.809608 10.0198L7.66161 16.7197C7.9347 16.9867 8.27581 17.1202 8.68495 17.1202C9.09507 17.1202 9.44909 16.9746 9.74701 16.6833Z"
@@ -416,7 +1170,7 @@
                 </svg>
               </button>
 
-              <button class="reviews__btn reviews__btn_next" type="button">
+              <button class="reviews__btn reviews__btn_next" type="button" aria-label="Next slide">
                 <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M14.253 16.6831C13.9551 16.3918 13.8121 16.0398 13.824 15.6271C13.8369 15.2144 13.9923 14.8624 14.2902 14.5711L18.4983 10.4565H1.88959C1.46755 10.4565 1.11353 10.3167 0.82753 10.037C0.542527 9.75836 0.400024 9.41268 0.400024 9C0.400024 8.58733 0.542527 8.24117 0.82753 7.96152C1.11353 7.68284 1.46755 7.5435 1.88959 7.5435H18.4983L14.253 3.39247C13.9551 3.10117 13.8061 2.75501 13.8061 2.35398C13.8061 1.95393 13.9551 1.60826 14.253 1.31696C14.5509 1.02565 14.9049 0.880005 15.3151 0.880005C15.7242 0.880005 16.0777 1.02565 16.3756 1.31696L23.1904 7.98045C23.3393 8.1261 23.4451 8.28389 23.5077 8.45382C23.5692 8.62374 23.6 8.8058 23.6 9C23.6 9.1942 23.5692 9.37627 23.5077 9.54619C23.4451 9.71612 23.3393 9.87391 23.1904 10.0196L16.3384 16.7195C16.0653 16.9865 15.7242 17.12 15.3151 17.12C14.9049 17.12 14.5509 16.9744 14.253 16.6831Z"
@@ -460,7 +1214,7 @@
                 </p>
 
                 <div class="slide__info">
-                  <img class="slide__user" src="/img/user_1.jpg" alt="Jacob William" />
+                  <img class="slide__user" src="/img/user_1.jpg" width="80" height="80" alt="Jacob William" />
 
                   <div class="slide__user-wrapper">
                     <h3 class="slide__user-name">Jacob William</h3>
@@ -499,7 +1253,7 @@
                 </p>
 
                 <div class="slide__info">
-                  <img class="slide__user" src="/img/user_2.jpg" alt="Marcus Johns" />
+                  <img class="slide__user" src="/img/user_2.jpg" width="80" height="80" alt="Marcus Johns" />
 
                   <div class="slide__user-wrapper">
                     <h3 class="slide__user-name">Marcus Johns</h3>
@@ -538,7 +1292,7 @@
                 </p>
 
                 <div class="slide__info">
-                  <img class="slide__user" src="/img/user_3.jpg" alt="Kane Cutting" />
+                  <img class="slide__user" src="/img/user_3.jpg" width="80" height="80" alt="Kane Cutting" />
 
                   <div class="slide__user-wrapper">
                     <h3 class="slide__user-name">Kane Cutting</h3>
@@ -577,7 +1331,7 @@
                 </p>
 
                 <div class="slide__info">
-                  <img class="slide__user" src="/img/user_3.jpg" alt="Kane Cutting" />
+                  <img class="slide__user" src="/img/user_3.jpg" width="80" height="80" alt="Kane Cutting" />
 
                   <div class="slide__user-wrapper">
                     <h3 class="slide__user-name">Kane Cutting</h3>
@@ -616,7 +1370,7 @@
                 </p>
 
                 <div class="slide__info">
-                  <img class="slide__user" src="/img/user_1.jpg" alt="Jacob William" />
+                  <img class="slide__user" src="/img/user_1.jpg" width="80" height="80" alt="Jacob William" />
 
                   <div class="slide__user-wrapper">
                     <h3 class="slide__user-name">Jacob William</h3>
@@ -671,7 +1425,7 @@
                   </p>
 
                   <div class="blog__card-info">
-                    <img class="blog__card-user" src="/img/blog-user-1.jpg" alt="Carlos James" />
+                    <img class="blog__card-user" src="/img/blog-user-1.jpg" width="31" height="31" alt="Carlos James" />
 
                     <h3 class="blog__card-user-title">Carlos James</h3>
 
@@ -711,7 +1465,7 @@
                   </p>
 
                   <div class="blog__card-info">
-                    <img class="blog__card-user" src="/img/blog-user-1.jpg" alt="Carlos James" />
+                    <img class="blog__card-user" src="/img/blog-user-1.jpg" width="31" height="31" alt="Carlos James" />
 
                     <h3 class="blog__card-user-title">Carlos James</h3>
 
@@ -729,7 +1483,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container footer__container">
         <div class="footer__wrapper">
           <div class="footer__content">
@@ -742,9 +1496,7 @@
               </p>
 
               <address class="footer__address">
-                <a class="footer__address-link footer__address-link_phone" href="tel:+1 123-456-0606">
-                  +1 123-456-0606
-                </a>
+                <a class="footer__address-link footer__address-link_phone" href="tel:+11234560606"> +1 123-456-0606 </a>
                 <a class="footer__address-link footer__address-link_mail" href="mailto:buildyvp@example.com">
                   buildyvp@example.com
                 </a>
@@ -761,7 +1513,7 @@
                 <li class="footer__photo-item">
                   <img class="footer__photo-image" src="/img/inst-1.jpg" width="90" height="90" alt="Instagram" />
                   <div class="footer__photo-details">
-                    <a class="footer__photo-link" href="#">
+                    <a class="footer__photo-link" href="#" aria-label="Go to instagram">
                       <svg class="footer__photo-icon" viewBox="0 0 22 22">
                         <use href="/sprite.svg#instagram"></use>
                       </svg>
@@ -771,7 +1523,7 @@
                 <li class="footer__photo-item">
                   <img class="footer__photo-image" src="/img/inst-2.jpg" width="90" height="90" alt="Instagram" />
                   <div class="footer__photo-details">
-                    <a class="footer__photo-link" href="#">
+                    <a class="footer__photo-link" href="#" aria-label="Go to instagram">
                       <svg class="footer__photo-icon" viewBox="0 0 22 22">
                         <use href="/sprite.svg#instagram"></use>
                       </svg>
@@ -781,7 +1533,7 @@
                 <li class="footer__photo-item">
                   <img class="footer__photo-image" src="/img/inst-3.jpg" width="90" height="90" alt="Instagram" />
                   <div class="footer__photo-details">
-                    <a class="footer__photo-link" href="#">
+                    <a class="footer__photo-link" href="#" aria-label="Go to instagram">
                       <svg class="footer__photo-icon" viewBox="0 0 22 22">
                         <use href="/sprite.svg#instagram"></use>
                       </svg>
@@ -791,7 +1543,7 @@
                 <li class="footer__photo-item">
                   <img class="footer__photo-image" src="/img/inst-4.jpg" width="90" height="90" alt="Instagram" />
                   <div class="footer__photo-details">
-                    <a class="footer__photo-link" href="#">
+                    <a class="footer__photo-link" href="#" aria-label="Go to instagram">
                       <svg class="footer__photo-icon" viewBox="0 0 22 22">
                         <use href="/sprite.svg#instagram"></use>
                       </svg>
@@ -801,7 +1553,7 @@
                 <li class="footer__photo-item">
                   <img class="footer__photo-image" src="/img/inst-5.jpg" width="90" height="90" alt="Instagram" />
                   <div class="footer__photo-details">
-                    <a class="footer__photo-link" href="#">
+                    <a class="footer__photo-link" href="#" aria-label="Go to instagram">
                       <svg class="footer__photo-icon" viewBox="0 0 22 22">
                         <use href="/sprite.svg#instagram"></use>
                       </svg>
@@ -811,7 +1563,7 @@
                 <li class="footer__photo-item">
                   <img class="footer__photo-image" src="/img/inst-6.jpg" width="90" height="90" alt="Instagram" />
                   <div class="footer__photo-details">
-                    <a class="footer__photo-link" href="#">
+                    <a class="footer__photo-link" href="#" aria-label="Go to instagram">
                       <svg class="footer__photo-icon" viewBox="0 0 22 22">
                         <use href="/sprite.svg#instagram"></use>
                       </svg>
@@ -827,28 +1579,29 @@
                 Lorem Ipsum is simply dummy textt of the printing & types setting industrys.
               </p>
 
-              <form class="footer__form" action="#">
-                <input class="footer__form-input" type="email" placeholder="Enter Your Email" />
+              <form class="footer__form">
+                <span class="footer__form-error" data-for="email"></span>
+                <input class="footer__form-input" type="email" name="email" placeholder="Enter Your Email" />
                 <button class="footer__form-submit button" type="submit">Submit</button>
               </form>
 
               <ul class="footer__social">
                 <li class="footer__social-item">
-                  <a class="footer__social-link" href="#">
+                  <a class="footer__social-link" href="#" aria-label="Facebook">
                     <svg class="footer__social-facebook" viewBox="0 0 12 25">
                       <use href="/sprite.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer__social-item">
-                  <a class="footer__social-link" href="#">
+                  <a class="footer__social-link" href="#" aria-label="In">
                     <svg class="footer__social-in" viewBox="0 0 21 21">
                       <use href="/sprite.svg#in"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer__social-item">
-                  <a class="footer__social-link" href="#">
+                  <a class="footer__social-link" href="#" aria-label="Twitter">
                     <svg class="footer__social-twitter" viewBox="0 0 22 18">
                       <use href="/sprite.svg#twitter"></use>
                     </svg>
@@ -884,7 +1637,7 @@
             </ul>
           </div>
 
-          <button class="footer__btn-top"></button>
+          <button class="footer__btn-top" type="button" aria-label="Scroll to top"></button>
         </div>
 
         <div class="footer__wrapper-bottom">

@@ -81,11 +81,8 @@
       background-image: url('/img/01.jpg');
       background-image: image-set(
         url('/img/01.avif') type('image/avif') 1x,
-        url('/img/01@2x.avif') type('image/avif') 2x,
         url('/img/01.webp') type('image/webp') 1x,
-        url('/img/01@2x.webp') type('image/webp') 2x,
-        url('/img/01.jpg') type('image/jpg') 1x,
-        url('/img/01@2x.jpg') type('image/jpg') 2x
+        url('/img/01.jpg') type('image/jpg') 1x
       );
       background-size: auto;
 
@@ -98,11 +95,8 @@
       background-image: url('/img/02.jpg');
       background-image: image-set(
         url('/img/02.avif') type('image/avif') 1x,
-        url('/img/02@2x.avif') type('image/avif') 2x,
         url('/img/02.webp') type('image/webp') 1x,
-        url('/img/02@2x.webp') type('image/webp') 2x,
-        url('/img/02.jpg') type('image/jpg') 1x,
-        url('/img/02@2x.jpg') type('image/jpg') 2x
+        url('/img/02.jpg') type('image/jpg') 1x
       );
 
       @include tablet {
@@ -114,11 +108,8 @@
       background-image: url('/img/03.jpg');
       background-image: image-set(
         url('/img/03.avif') type('image/avif') 1x,
-        url('/img/03@2x.avif') type('image/avif') 2x,
         url('/img/03.webp') type('image/webp') 1x,
-        url('/img/03@2x.webp') type('image/webp') 2x,
-        url('/img/03.jpg') type('image/jpg') 1x,
-        url('/img/03@2x.jpg') type('image/jpg') 2x
+        url('/img/03.jpg') type('image/jpg') 1x
       );
       background-size: auto;
       background-position: bottom;
@@ -133,11 +124,8 @@
       background-image: url('/img/04.jpg');
       background-image: image-set(
         url('/img/04.avif') type('image/avif') 1x,
-        url('/img/04@2x.avif') type('image/avif') 2x,
         url('/img/04.webp') type('image/webp') 1x,
-        url('/img/04@2x.webp') type('image/webp') 2x,
-        url('/img/04.jpg') type('image/jpg') 1x,
-        url('/img/04@2x.jpg') type('image/jpg') 2x
+        url('/img/04.jpg') type('image/jpg') 1x
       );
 
       @include tablet {
@@ -149,11 +137,8 @@
       background-image: url('/img/05.jpg');
       background-image: image-set(
         url('/img/05.avif') type('image/avif') 1x,
-        url('/img/05@2x.avif') type('image/avif') 2x,
         url('/img/05.webp') type('image/webp') 1x,
-        url('/img/05@2x.webp') type('image/webp') 2x,
-        url('/img/05.jpg') type('image/jpg') 1x,
-        url('/img/05@2x.jpg') type('image/jpg') 2x
+        url('/img/05.jpg') type('image/jpg') 1x
       );
       background-size: auto;
 
@@ -166,11 +151,8 @@
       background-image: url('/img/06.jpg');
       background-image: image-set(
         url('/img/06.avif') type('image/avif') 1x,
-        url('/img/06@2x.avif') type('image/avif') 2x,
         url('/img/06.webp') type('image/webp') 1x,
-        url('/img/06@2x.webp') type('image/webp') 2x,
-        url('/img/06.jpg') type('image/jpg') 1x,
-        url('/img/06@2x.jpg') type('image/jpg') 2x
+        url('/img/06.jpg') type('image/jpg') 1x
       );
       background-size: auto;
       background-position: bottom;
