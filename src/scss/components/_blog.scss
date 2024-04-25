@@ -66,12 +66,15 @@
   }
 
   &__list {
-    display: flex;
+    // display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin-bottom: 50px;
 
     @include tablet {
-      flex-direction: column;
+      // flex-direction: column;
+      grid-template-columns: 1fr;
     }
   }
 
