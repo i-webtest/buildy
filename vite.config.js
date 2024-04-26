@@ -3,8 +3,8 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   // base: '/buildy/',
-  base: '/buildy/dist/',
-  // base: '/dist/',
+  // base: '/buildy/dist/',
+  base: '/dist/',
   root: './src',
   publicDir: '../public',
   build: {
