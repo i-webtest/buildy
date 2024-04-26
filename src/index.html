@@ -17,734 +17,6 @@
     <link rel="stylesheet" href="scss/index.scss" />
 
     <title>BUILDY VP - Welcome to The Buildy VP</title>
-
-    <!-- <style>
-      :root {
-        --swiper-theme-color: #007aff;
-      }
-
-      :host {
-        position: relative;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        z-index: 1;
-      }
-
-      :root {
-        --swiper-navigation-size: 44px;
-      }
-
-      html {
-        line-height: 1.15;
-        -webkit-text-size-adjust: 100%;
-      }
-
-      body {
-        margin: 0;
-      }
-
-      main {
-        display: block;
-      }
-
-      h1 {
-        font-size: 2em;
-        margin: 0.67em 0;
-      }
-
-      a {
-        background-color: transparent;
-      }
-
-      img {
-        border-style: none;
-      }
-
-      button {
-        font-family: inherit;
-        font-size: 100%;
-        line-height: 1.15;
-        margin: 0;
-      }
-
-      button {
-        overflow: visible;
-      }
-
-      button {
-        text-transform: none;
-      }
-
-      button,
-      [type='button'] {
-        -webkit-appearance: button;
-      }
-
-      button::-moz-focus-inner,
-      [type='button']::-moz-focus-inner {
-        border-style: none;
-        padding: 0;
-      }
-
-      button:-moz-focusring,
-      [type='button']:-moz-focusring {
-        outline: 1px dotted ButtonText;
-      }
-
-      ::-webkit-file-upload-button {
-        -webkit-appearance: button;
-        font: inherit;
-      }
-
-      :root {
-        --font-size: 16px;
-      }
-
-      @media (max-width: 1240px) {
-        :root {
-          --font-size: 14px;
-        }
-      }
-
-      @media (max-width: 520px) {
-        :root {
-          --font-size: 12px;
-        }
-      }
-
-      @font-face {
-        font-display: swap;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 300;
-        src: local('Poppins Light'), local('Poppins-Light'), url(../fonts/poppins-v21-latin-300.woff2) format('woff2');
-      }
-
-      @font-face {
-        font-display: swap;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 400;
-        src: local('Poppins Regular'), local('Poppins-Regular'),
-          url(../fonts/poppins-v21-latin-regular.woff2) format('woff2');
-      }
-
-      @font-face {
-        font-display: swap;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 500;
-        src: local('Poppins Medium'), local('Poppins-Medium'), url(../fonts/poppins-v21-latin-500.woff2) format('woff2');
-      }
-
-      @font-face {
-        font-display: swap;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 600;
-        src: local('Poppins SemiBold'), local('Poppins-SemiBold'),
-          url(../fonts/poppins-v21-latin-600.woff2) format('woff2');
-      }
-
-      @font-face {
-        font-display: swap;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 700;
-        src: local('Poppins Bold'), local('Poppins-Bold'), url(../fonts/poppins-v21-latin-700.woff2) format('woff2');
-      }
-
-      @font-face {
-        font-display: swap;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 800;
-        src: local('Poppins ExtraBold'), local('Poppins-ExtraBold'),
-          url(../fonts/poppins-v21-latin-800.woff2) format('woff2');
-      }
-
-      html {
-        position: relative;
-        box-sizing: border-box;
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-      }
-
-      *,
-      *:before,
-      *:after {
-        box-sizing: inherit;
-      }
-
-      body {
-        position: relative;
-        overflow-x: hidden;
-        min-width: 320px;
-        min-height: 100vh;
-        font-family: Poppins, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-rendering: optimizeLegibility;
-        font-size: var(--font-size);
-        font-weight: 300;
-        letter-spacing: 0.05em;
-        color: #fff;
-        background-color: #000c;
-      }
-
-      img,
-      svg {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
-
-      svg {
-        max-height: 100%;
-      }
-
-      button {
-        padding: 0;
-        border: none;
-        background-color: transparent;
-      }
-
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      h1,
-      p {
-        margin: 0;
-      }
-
-      .button {
-        position: relative;
-        z-index: 1;
-        display: block;
-        font-weight: 600;
-        text-transform: uppercase;
-        border: 2px solid #fff;
-        color: #fff;
-        padding: 13px 23px;
-      }
-
-      .button:before {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background-color: #fff;
-      }
-
-      .container {
-        max-width: 1454px;
-        padding: 0 52px;
-        margin: 0 auto;
-      }
-
-      @media (max-width: 940px) {
-        .container {
-          padding: 0 46px;
-        }
-      }
-
-      @media (max-width: 520px) {
-        .container {
-          padding: 0 14px;
-        }
-      }
-
-      .header {
-        position: absolute;
-        top: 25px;
-        left: 0;
-        right: 0;
-        z-index: 50;
-      }
-
-      @media (max-width: 940px) {
-        .header {
-          top: 15px;
-        }
-      }
-
-      .header__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 45px;
-      }
-
-      .header__logo {
-        width: 221px;
-      }
-
-      @media (max-width: 1240px) {
-        .header__logo {
-          width: 150px;
-        }
-      }
-
-      .navigation {
-        max-width: 826px;
-        width: 100%;
-      }
-
-      @media (max-width: 940px) {
-        .navigation {
-          display: none;
-        }
-      }
-
-      .navigation__list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 15px;
-      }
-
-      .navigation__link {
-        font-weight: 400;
-        text-transform: uppercase;
-      }
-
-      .navigation__link.active {
-        text-shadow: 0 0 3px #fff, 0 0 1px #fff;
-      }
-
-      .navigation__button {
-        font-size: 18px;
-        font-weight: 600;
-      }
-
-      .hamburger {
-        position: relative;
-        display: none;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-        border: 1px solid #fff;
-        border-radius: 4px;
-      }
-
-      @media (max-width: 940px) {
-        .hamburger {
-          display: flex;
-        }
-      }
-
-      .hamburger span,
-      .hamburger:before,
-      .hamburger:after {
-        width: 24px;
-        height: 2px;
-        background-color: #fff;
-      }
-
-      .hamburger:before,
-      .hamburger:after {
-        content: '';
-        position: absolute;
-      }
-
-      .hamburger:before {
-        animation: moveTopLineRev 0.4s forwards;
-      }
-
-      .hamburger span {
-        animation: moveMidLineRev 0.4s forwards;
-      }
-
-      .hamburger:after {
-        animation: moveBotLineRev 0.4s forwards;
-      }
-
-      @keyframes moveTopLineRev {
-        0% {
-          transform: scale(1) translateY(0) rotate(-45deg);
-        }
-
-        25% {
-          transform: scale(1.2) translateY(0) rotate(-45deg);
-        }
-
-        50% {
-          transform: scale(1) translateY(0) rotate(-45deg);
-        }
-
-        75% {
-          transform: scale(1) translateY(0) rotate(0);
-        }
-
-        to {
-          transform: scale(1) translateY(-7px);
-        }
-      }
-
-      @keyframes moveMidLineRev {
-        0% {
-          opacity: 0;
-        }
-
-        25% {
-          opacity: 0;
-        }
-
-        50% {
-          opacity: 0;
-        }
-
-        75% {
-          opacity: 1;
-        }
-
-        to {
-          opacity: 1;
-        }
-      }
-
-      @keyframes moveBotLineRev {
-        0% {
-          transform: scale(1) translateY(0) rotate(45deg);
-        }
-
-        25% {
-          transform: scale(1.2) translateY(0) rotate(45deg);
-        }
-
-        50% {
-          transform: scale(1) translateY(0) rotate(45deg);
-        }
-
-        75% {
-          transform: scale(1) translateY(0) rotate(0);
-        }
-
-        to {
-          transform: scale(1) translateY(7px);
-        }
-      }
-
-      .main__wrapper {
-        position: relative;
-        background-image: url(/buildy/assets/main-bg-BSZHR70Q.jpg);
-        background-image: image-set(
-          url(/buildy/assets/main-bg-BWYiaEEE.avif) type('image/avif') 1x,
-          url(/buildy/assets/main-bg-SPbFJPLv.webp) type('image/webp') 1x,
-          url(/buildy/assets/main-bg-BSZHR70Q.jpg) type('image/jpg') 1x
-        );
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center top;
-      }
-
-      .main__wrapper:before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #000c;
-      }
-
-      .hero {
-        position: relative;
-        z-index: 1;
-        padding: 267px 0 120px;
-      }
-
-      @media (max-width: 940px) {
-        .hero {
-          padding: 170px 0 80px;
-        }
-      }
-
-      @media (max-width: 520px) {
-        .hero {
-          padding: 120px 0 20px;
-        }
-      }
-
-      .hero__container {
-        display: grid;
-        grid-template-areas: 'subtitle .' 'title info' 'text info' 'button info';
-      }
-
-      @media (max-width: 940px) {
-        .hero__container {
-          grid-template-areas: 'subtitle' 'title' 'text' 'button' 'info';
-        }
-      }
-
-      .hero__subtitle {
-        position: relative;
-        display: flex;
-        align-items: center;
-        grid-area: subtitle;
-        font-size: 20px;
-        margin-bottom: 15px;
-      }
-
-      @media (max-width: 1240px) {
-        .hero__subtitle {
-          font-size: 18px;
-        }
-      }
-
-      @media (max-width: 940px) {
-        .hero__subtitle {
-          font-size: 16px;
-        }
-      }
-
-      @media (max-width: 520px) {
-        .hero__subtitle {
-          font-size: 14px;
-        }
-      }
-
-      .hero__subtitle:before {
-        content: '';
-        position: absolute;
-        left: -125px;
-        max-width: 100px;
-        width: 100%;
-        height: 1px;
-        background-color: #fff;
-      }
-
-      .hero__title {
-        grid-area: title;
-        font-size: 62px;
-        line-height: 1.35484;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-      }
-
-      @media (max-width: 1240px) {
-        .hero__title {
-          font-size: 44px;
-        }
-      }
-
-      @media (max-width: 940px) {
-        .hero__title {
-          font-size: 32px;
-        }
-      }
-
-      @media (max-width: 520px) {
-        .hero__title {
-          font-size: 22px;
-        }
-      }
-
-      .hero__title-thin {
-        display: block;
-        max-width: 660px;
-        font-weight: 400;
-      }
-
-      @media (max-width: 1240px) {
-        .hero__title-thin {
-          max-width: 470px;
-        }
-      }
-
-      @media (max-width: 940px) {
-        .hero__title-thin {
-          max-width: 340px;
-        }
-      }
-
-      @media (max-width: 520px) {
-        .hero__title-thin {
-          max-width: 240px;
-        }
-      }
-
-      .hero__title-bold {
-        font-weight: 700;
-      }
-
-      .hero__description {
-        grid-area: text;
-        max-width: 645px;
-        margin-bottom: 35px;
-      }
-
-      @media (max-width: 1240px) {
-        .hero__description {
-          max-width: 570px;
-        }
-      }
-
-      .hero__button {
-        grid-area: button;
-        justify-self: start;
-        margin-bottom: 133px;
-      }
-
-      @media (max-width: 940px) {
-        .hero__button {
-          margin-bottom: 70px;
-        }
-      }
-
-      @media (max-width: 520px) {
-        .hero__button {
-          margin-bottom: 30px;
-        }
-      }
-
-      .hero__social {
-        position: absolute;
-        top: 480px;
-        right: -230px;
-        display: flex;
-        align-items: center;
-        gap: 25px;
-        transform: rotate(90deg);
-      }
-
-      @media (max-width: 940px) {
-        .hero__social {
-          top: 420px;
-          right: -210px;
-        }
-      }
-
-      @media (max-width: 520px) {
-        .hero__social {
-          display: none;
-        }
-      }
-
-      .hero__social:before {
-        content: '';
-        position: absolute;
-        left: -105px;
-        width: 80px;
-        height: 1px;
-        background-color: #fff;
-      }
-
-      .hero__social-link {
-        font-weight: 500;
-        font-size: 18px;
-        text-transform: uppercase;
-      }
-
-      @media (max-width: 1240px) {
-        .hero__social-link {
-          font-size: 16px;
-        }
-      }
-
-      @media (max-width: 940px) {
-        .hero__social-link {
-          font-size: 14px;
-        }
-      }
-
-      @media (max-width: 520px) {
-        .hero__social-link {
-          font-size: 12px;
-        }
-      }
-
-      .hero__social-dot {
-        display: block;
-        width: 5px;
-        height: 5px;
-        background-color: #fff;
-        border-radius: 100%;
-      }
-
-      .hero__list {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        grid-area: info;
-        align-self: end;
-      }
-
-      @media (max-width: 940px) {
-        .hero__list {
-          display: none;
-        }
-      }
-
-      .hero__item {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        gap: 20px;
-      }
-
-      @media (max-width: 940px) {
-        .hero__item {
-          gap: 10px;
-        }
-      }
-
-      .hero__item-info {
-        display: flex;
-        flex-direction: column;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 1.33333;
-        text-transform: uppercase;
-        text-align: right;
-      }
-
-      @media (max-width: 1240px) {
-        .hero__item-info {
-          font-size: 18px;
-        }
-      }
-
-      @media (max-width: 940px) {
-        .hero__item-info {
-          font-size: 16px;
-        }
-      }
-
-      @media (max-width: 520px) {
-        .hero__item-info {
-          font-size: 14px;
-        }
-      }
-
-      .hero__item-info span {
-        font-weight: 700;
-      }
-
-      .hero__item-icon {
-        width: 100px;
-        height: 100px;
-      }
-
-      @media (max-width: 1240px) {
-        .hero__item-icon {
-          width: 80px;
-          height: 80px;
-        }
-      }
-    </style> -->
   </head>
   <body>
     <header class="header">
@@ -758,7 +30,7 @@
         <nav class="header__nav navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link active" href="/">Home</a>
+              <a class="navigation__link active" href="#hero">Home</a>
             </li>
 
             <li class="navigation__item">
@@ -1470,6 +742,258 @@
                     <h3 class="blog__card-user-title">Carlos James</h3>
 
                     <time class="blog__card-date" datetime="2022-12-24">24 December, 2022</time>
+                  </div>
+
+                  <a class="blog__card-link" href="#">Read More</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="blog__item">
+              <article class="blog__card">
+                <svg
+                  class="blog__card-intersect"
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.6"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 0V75H75C75 33.5786 41.4214 0 0 0Z"
+                    fill="black"
+                  />
+                </svg>
+
+                <div class="blog__card-details">
+                  <span class="blog__card-label">Builder</span>
+
+                  <p class="blog__card-text">
+                    Ut&nbsp;enim ad&nbsp;minim veniam, quis nosti exercitations
+                    <span>ullamco laboris nisi ut&nbsp;aliquip...</span>
+                  </p>
+
+                  <div class="blog__card-info">
+                    <img class="blog__card-user" src="/img/blog-user-3.jpg" width="31" height="31" alt="Marcus Johns" />
+
+                    <h3 class="blog__card-user-title">Marcus Johns</h3>
+
+                    <time class="blog__card-date" datetime="2020-12-20">20 December, 2020</time>
+                  </div>
+
+                  <a class="blog__card-link" href="#">Read More</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="blog__item">
+              <article class="blog__card">
+                <svg
+                  class="blog__card-intersect"
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.6"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 0V75H75C75 33.5786 41.4214 0 0 0Z"
+                    fill="black"
+                  />
+                </svg>
+
+                <div class="blog__card-details">
+                  <span class="blog__card-label">Builder</span>
+
+                  <p class="blog__card-text">
+                    Ut&nbsp;enim ad&nbsp;minim veniam, quis nosti exercitations
+                    <span>ullamco laboris nisi ut&nbsp;aliquip...</span>
+                  </p>
+
+                  <div class="blog__card-info">
+                    <img class="blog__card-user" src="/img/blog-user-4.jpg" width="31" height="31" alt="Kane Cutting" />
+
+                    <h3 class="blog__card-user-title">Kane Cutting</h3>
+
+                    <time class="blog__card-date" datetime="2021-15-24">15 June, 2021</time>
+                  </div>
+
+                  <a class="blog__card-link" href="#">Read More</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="blog__item">
+              <article class="blog__card">
+                <svg
+                  class="blog__card-intersect"
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.6"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 0V75H75C75 33.5786 41.4214 0 0 0Z"
+                    fill="black"
+                  />
+                </svg>
+
+                <div class="blog__card-details">
+                  <span class="blog__card-label">Architect</span>
+
+                  <p class="blog__card-text">
+                    Ut&nbsp;enim ad&nbsp;minim veniam, quis nosti exercitations
+                    <span>ullamco laboris nisi ut&nbsp;aliquip...</span>
+                  </p>
+
+                  <div class="blog__card-info">
+                    <img class="blog__card-user" src="/img/blog-user-1.jpg" width="31" height="31" alt="Carlos James" />
+
+                    <h3 class="blog__card-user-title">Carlos James</h3>
+
+                    <time class="blog__card-date" datetime="2012-11-14">14 November, 2012</time>
+                  </div>
+
+                  <a class="blog__card-link" href="#">Read More</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="blog__item">
+              <article class="blog__card">
+                <svg
+                  class="blog__card-intersect"
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.6"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 0V75H75C75 33.5786 41.4214 0 0 0Z"
+                    fill="black"
+                  />
+                </svg>
+
+                <div class="blog__card-details">
+                  <span class="blog__card-label">Builder</span>
+
+                  <p class="blog__card-text">
+                    Ut&nbsp;enim ad&nbsp;minim veniam, quis nosti exercitations
+                    <span>ullamco laboris nisi ut&nbsp;aliquip...</span>
+                  </p>
+
+                  <div class="blog__card-info">
+                    <img
+                      class="blog__card-user"
+                      src="/img/blog-user-3.jpg"
+                      width="31"
+                      height="31"
+                      alt="Jacob William"
+                    />
+
+                    <h3 class="blog__card-user-title">Jacob William</h3>
+
+                    <time class="blog__card-date" datetime="2013-05-03">03 May, 2013</time>
+                  </div>
+
+                  <a class="blog__card-link" href="#">Read More</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="blog__item">
+              <article class="blog__card">
+                <svg
+                  class="blog__card-intersect"
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.6"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 0V75H75C75 33.5786 41.4214 0 0 0Z"
+                    fill="black"
+                  />
+                </svg>
+
+                <div class="blog__card-details">
+                  <span class="blog__card-label">Architect</span>
+
+                  <p class="blog__card-text">
+                    Ut&nbsp;enim ad&nbsp;minim veniam, quis nosti exercitations
+                    <span>ullamco laboris nisi ut&nbsp;aliquip...</span>
+                  </p>
+
+                  <div class="blog__card-info">
+                    <img class="blog__card-user" src="/img/blog-user-1.jpg" width="31" height="31" alt="Carlos James" />
+
+                    <h3 class="blog__card-user-title">Carlos James</h3>
+
+                    <time class="blog__card-date" datetime="2012-11-14">14 November, 2012</time>
+                  </div>
+
+                  <a class="blog__card-link" href="#">Read More</a>
+                </div>
+              </article>
+            </li>
+
+            <li class="blog__item">
+              <article class="blog__card">
+                <svg
+                  class="blog__card-intersect"
+                  width="75"
+                  height="75"
+                  viewBox="0 0 75 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.6"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 0V75H75C75 33.5786 41.4214 0 0 0Z"
+                    fill="black"
+                  />
+                </svg>
+
+                <div class="blog__card-details">
+                  <span class="blog__card-label">Builder</span>
+
+                  <p class="blog__card-text">
+                    Ut&nbsp;enim ad&nbsp;minim veniam, quis nosti exercitations
+                    <span>ullamco laboris nisi ut&nbsp;aliquip...</span>
+                  </p>
+
+                  <div class="blog__card-info">
+                    <img
+                      class="blog__card-user"
+                      src="/img/blog-user-3.jpg"
+                      width="31"
+                      height="31"
+                      alt="Jacob William"
+                    />
+
+                    <h3 class="blog__card-user-title">Jacob William</h3>
+
+                    <time class="blog__card-date" datetime="2013-05-03">03 May, 2013</time>
                   </div>
 
                   <a class="blog__card-link" href="#">Read More</a>

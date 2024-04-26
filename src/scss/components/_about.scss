@@ -190,9 +190,6 @@
     opacity: 1;
   }
 
-  &__item-icon {
-  }
-
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -206,7 +203,6 @@
 
   &__video {
     flex-basis: 50%;
-    // border-radius: 322px;
     overflow: hidden;
 
     @include tablet {
@@ -269,9 +265,6 @@
 
   &__description:nth-child(4) {
     margin-bottom: 30px;
-  }
-
-  &__button {
   }
 }
 

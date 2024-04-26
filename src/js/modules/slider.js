@@ -1,6 +1,5 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
-// import Swiper and modules styles
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 
@@ -12,13 +11,7 @@ export const slider = () => {
       prevEl: '.reviews__btn_prev',
     },
 
-    // slidesPerView: 3,
-    // spaceBetween: 30,
     loop: false,
-    // keyboard: {
-    //   enabled: true,
-    //   // onlyInViewport: false,
-    // },
 
     breakpoints: {
       // when window width is >= 320px

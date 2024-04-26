@@ -61,12 +61,6 @@ export const trailers = () => {
             cursor: pointer;
           }
 
-          // @media (max-width: 520px) {
-          //   #button {
-          //     width: 60px;
-          //     height: 60px;
-          //   }
-          // }
         </style>
 
         <a href="https://www.youtube.com/embed/${idVideo}?autoplay=1">

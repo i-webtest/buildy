@@ -31,7 +31,6 @@ body {
   letter-spacing: $letter-spacing;
   color: $white;
   background-color: rgba(0, 0, 0, 0.8);
-  // background-color: $light;
 }
 
 img,
@@ -76,6 +75,10 @@ iframe {
   border: none;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);
@@ -116,11 +119,6 @@ iframe {
   max-width: 1454px;
   padding: 0 52px;
   margin: 0 auto;
-
-  // @include bigscreen {
-  //   max-width: 1600px;
-  //   padding: 0 60px;
-  // }
 
   @include tablet {
     padding: 0 46px;
